@@ -1,0 +1,2559 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Eco-Friendly Mailing Bags | Aiventus</title>
+
+  <!-- SEO META -->
+  <meta name="description" content="Eco-friendly, recyclable mailing bags for e-commerce, retail, and logistics. Sustainable packaging by Aiventus.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph (for social previews) -->
+  <meta property="og:title" content="Aiventus - Premium Mailing Solutions">
+  <meta property="og:description" content="Eco‑friendly, recyclable mailing bags and custom packaging solutions.">
+  <meta property="og:image" content="https://yourdomain.com/assets/og-image.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com/">
+
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
+
+  <!-- Preload Google Fonts CSS (font‑display=swap) -->
+  <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        as="style">
+
+  <!-- Load Google Fonts with font‑display swap -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+   
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif']
+        },
+        colors: {
+          primary: '#3b82f6'
+        }
+      }
+    }
+  }
+</script>
+
+<style>
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, -apple-system,
+                   BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .page { display: none; }
+    .page.active { display: block; }
+
+    .nav-button.active { background-color: #2563eb; color: white; }
+    .mobile-nav-button.active { background-color: #2563eb; color: white; }
+
+    /* Mobile menu animation */
+    #mobile-menu {
+        transition: all 0.3s ease-in-out;
+        max-height: 0;
+        overflow: hidden;
+    }
+    #mobile-menu.show { max-height: 300px; }
+
+    #mobile-menu-button svg {
+        transition: transform 0.3s ease-in-out;
+    }
+    #mobile-menu-button.open svg {
+        transform: rotate(90deg);
+    }
+
+    #mobile-menu.hidden { pointer-events: none; }
+    #mobile-language-dropdown {
+      pointer-events: auto;
+      touch-action: manipulation;
+    }
+
+    /* Feature animation – initial state */
+    .feature-block {
+      opacity: 0;
+      transform: scale(0.94);
+      transition:
+        opacity 500ms ease-out,
+        transform 500ms ease-out;
+      will-change: opacity, transform;
+    }
+
+    /* Revealed state */
+    .feature-block.is-visible {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    /* Respect reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      .feature-block {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+    }
+
+
+  @view-transition { navigation: auto; }
+
+</style>
+
+ </head>
+
+ <body class="bg-gray-50 font-sans"><!-- Navigation -->
+  <nav class="bg-gray-800 bg-opacity-90 shadow-lg sticky top-0 z-50 backdrop-blur-sm">
+   <div class="max-w-7xl mx-auto px-4 relative">
+    <div class="flex justify-between items-center py-4">
+            <button onclick="showPage('home')" class="flex items-center focus:outline-none">
+        <img
+  src="assets/icons/web-logo.avif"
+  alt="Aiventus Logo"
+  width="176"
+  height="44"
+  class="h-11 w-auto object-contain"
+  loading="eager"
+  fetchpriority="high"
+/>
+
+      </button>
+    <!-- Desktop Navigation -->
+     <div class="hidden md:flex space-x-1 items-center"><button onclick="showPage('home')" class="nav-button active px-4 py-2 rounded font-medium transition-colors hover:bg-blue-500 text-white" data-i18n="nav.home">Home</button> <button onclick="showPage('products')" class="nav-button px-4 py-2 rounded font-medium transition-colors hover:bg-blue-500 text-white" data-i18n="nav.products">Products</button> <button onclick="showPage('about')" class="nav-button px-4 py-2 rounded font-medium transition-colors hover:bg-blue-500 text-white" data-i18n="nav.about">About</button> <button onclick="showPage('contact')" class="nav-button px-4 py-2 rounded font-medium transition-colors hover:bg-blue-500 text-white" data-i18n="nav.contact">Contact</button> <button id="admin-nav-button" onclick="showPage('admin')" class="nav-button px-4 py-2 rounded font-medium transition-colors hover:bg-blue-500 text-white" style="display: none;" data-i18n="nav.admin">Admin</button> <!-- Language Selector - Desktop -->
+      <div class="relative ml-4"><button onclick="toggleLanguageDropdown()" class="flex items-center space-x-2 px-3 py-2 rounded bg-gray-700 hover:bg-gray-600 transition-colors text-white"> <span id="current-language-flag">🇬🇧</span> <span id="current-language-code" class="text-sm font-medium">EN</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg></button>
+       <div id="language-dropdown" class="hidden absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden z-50"><button onclick="changeLanguage('en')" class="language-option w-full text-left px-4 py-3 hover:bg-gray-100 transition-colors flex items-center space-x-3"> <span class="text-xl">🇬🇧</span> <span class="text-gray-800 font-medium">English</span> </button> <button onclick="changeLanguage('de')" class="language-option w-full text-left px-4 py-3 hover:bg-gray-100 transition-colors flex items-center space-x-3"> <span class="text-xl">🇩🇪</span> <span class="text-gray-800 font-medium">Deutsch</span> </button> <button onclick="changeLanguage('fr')" class="language-option w-full text-left px-4 py-3 hover:bg-gray-100 transition-colors flex items-center space-x-3"> <span class="text-xl">🇫🇷</span> <span class="text-gray-800 font-medium">Français</span> </button> <button onclick="changeLanguage('pl')" class="language-option w-full text-left px-4 py-3 hover:bg-gray-100 transition-colors flex items-center space-x-3"> <span class="text-xl">🇵🇱</span> <span class="text-gray-800 font-medium">Polski</span> </button> <button onclick="changeLanguage('es')" class="language-option w-full text-left px-4 py-3 hover:bg-gray-100 transition-colors flex items-center space-x-3"> <span class="text-xl">🇪🇸</span> <span class="text-gray-800 font-medium">Español</span> </button>
+       </div>
+      </div>
+     </div><!-- Mobile Language Selector & Hamburger Button -->
+     <div class="md:hidden flex items-center space-x-2"><!-- Mobile Language Selector - Always visible on mobile -->
+      <div id="mobile-language-selector" class="relative"><button
+  onclick="toggleMobileLanguageDropdown(event)"
+  class="flex items-center space-x-1 px-2 py-2 rounded bg-gray-700 hover:bg-gray-600 transition-colors text-white">
+ <span id="mobile-current-language-flag">🇬🇧</span> <span id="mobile-current-language-code" class="text-xs font-medium">EN</span> </button>
+       <div id="mobile-language-dropdown" class="hidden absolute right-0 mt-2 w-36 bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden z-[9999]"><button onclick="changeLanguage('en')" class="language-option w-full text-left px-3 py-2 hover:bg-gray-100 transition-colors flex items-center space-x-2"> <span class="text-lg">🇬🇧</span> <span class="text-gray-800 text-sm font-medium">English</span> </button> <button onclick="changeLanguage('de')" class="language-option w-full text-left px-3 py-2 hover:bg-gray-100 transition-colors flex items-center space-x-2"> <span class="text-lg">🇩🇪</span> <span class="text-gray-800 text-sm font-medium">Deutsch</span> </button> <button onclick="changeLanguage('fr')" class="language-option w-full text-left px-3 py-2 hover:bg-gray-100 transition-colors flex items-center space-x-2"> <span class="text-lg">🇫🇷</span> <span class="text-gray-800 text-sm font-medium">Français</span> </button> <button onclick="changeLanguage('pl')" class="language-option w-full text-left px-3 py-2 hover:bg-gray-100 transition-colors flex items-center space-x-2"> <span class="text-lg">🇵🇱</span> <span class="text-gray-800 text-sm font-medium">Polski</span> </button> <button onclick="changeLanguage('es')" class="language-option w-full text-left px-3 py-2 hover:bg-gray-100 transition-colors flex items-center space-x-2"> <span class="text-lg">🇪🇸</span> <span class="text-gray-800 text-sm font-medium">Español</span> </button>
+       </div>
+      </div><button
+  id="mobile-menu-button"
+  onclick="toggleMobileMenu()"
+  class="p-2 rounded hover:bg-blue-500 transition-colors text-white"
+  aria-label="Toggle mobile menu"
+>
+  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+  </svg>
+</button>
+
+     </div>
+    </div><!-- Mobile Navigation Menu -->
+    <div id="mobile-menu" class="md:hidden hidden absolute top-full left-0 right-0 bg-gray-800 bg-opacity-90 backdrop-blur-sm border-t border-gray-700 shadow-lg z-40">
+     <div class="flex flex-col py-2"><button onclick="showPage('home'); closeMobileMenu()" class="mobile-nav-button active text-left px-4 py-3 font-medium transition-colors hover:bg-gray-700 text-white" data-i18n="nav.home">Home</button> <button onclick="showPage('products'); closeMobileMenu()" class="mobile-nav-button text-left px-4 py-3 font-medium transition-colors hover:bg-gray-700 text-white" data-i18n="nav.products">Products</button> <button onclick="showPage('about'); closeMobileMenu()" class="mobile-nav-button text-left px-4 py-3 font-medium transition-colors hover:bg-gray-700 text-white" data-i18n="nav.about">About</button> <button onclick="showPage('contact'); closeMobileMenu()" class="mobile-nav-button text-left px-4 py-3 font-medium transition-colors hover:bg-gray-700 text-white" data-i18n="nav.contact">Contact</button> <button id="admin-mobile-nav-button" onclick="showPage('admin'); closeMobileMenu()" class="mobile-nav-button text-left px-4 py-3 font-medium transition-colors hover:bg-gray-700 text-white" style="display: none;" data-i18n="nav.admin">Admin</button>
+     </div>
+    </div>
+   </div>
+  </nav>
+  
+  <main>
+  <!-- Home Page -->
+  <div id="home" class="page active">
+    <!-- Hero Banner Section -->
+<div id="banner-section" class="bg-blue-600 text-white h-[calc(100vh-4rem)] flex items-center relative overflow-hidden">
+<!-- Image Overlay -->
+<img
+  src="assets/icons/hero-overlay.avif"
+  alt=""
+  aria-hidden="true"
+  class="absolute inset-0 w-full h-full pointer-events-none"
+  style="object-fit: cover;"
+  fetchpriority="high"
+/>
+
+
+  <!-- Hero Content -->
+  <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
+    <h1 id="banner-title" class="text-5xl font-bold mb-6">
+      Producer of Your Mailing bags.
+    </h1>
+    <p
+      id="banner-description"
+      class="text-xl mb-8 max-w-4xl mx-auto"
+    >
+      Recyclable. Eco-friendly. Smarter e-commerce packaging for your businesses.
+    </p>
+    <button
+      id="explore-products-btn"
+      onclick="showPage('products')"
+      class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+    >
+      Explore Products
+    </button>
+  </div>
+  <!-- Minimal Scroll Down Cue -->
+  <div id="scroll-cue" class="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce text-white/80">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+    </svg>
+  </div>
+</div>
+
+<!-- Features Section (responsive stacking on mobile) -->
+<div class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col sm:flex-row justify-center gap-10">
+
+      <!-- Feature 1 -->
+      <div class="flex-1 min-w-0 text-center feature-block">
+        <div class="mx-auto flex items-center justify-center mb-3">
+        <img src="assets/icons/iso-symbol.avif" alt="ISO" class="w-24" width="262" height="251" loading="lazy">
+        </div>
+        <h2
+          id="feature-iso-title"
+          class="font-semibold mt-3 text-blue-600 sm:text-xl text-lg max-[480px]:text-base"
+        >
+          ISO Certified
+        </h2>
+        <p
+        id="feature-iso-desc"
+        class="mt-3 text-gray-600 text-base max-w-[22rem] mx-auto max-w-[22rem]"
+        >
+          Our production processes meet rigorous international standards to ensure consistent quality and reliability.
+        </p>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="flex-1 min-w-0 text-center feature-block">
+        <div class="mx-auto flex items-center justify-center mb-3">
+          <img src="assets/icons/recycle.avif" alt="Eco-Friendly" class="w-24" width="262" height="251" loading="lazy">
+        </div>
+        <h2
+          id="feature-recyclable-title"
+          class="font-semibold mt-3 text-blue-600 sm:text-xl text-lg max-[480px]:text-base"
+        >
+          Recyclable
+        </h2>
+        <p
+          id="feature-recyclable-desc"
+          class="mt-3 text-gray-600 text-base max-w-[22rem] mx-auto max-w-[22rem]"
+        >
+          Our mailing bags are fully recyclable, helping your business reduce waste and support a circular economy.
+        </p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="flex-1 min-w-0 text-center feature-block">
+        <div class="mx-auto flex items-center justify-center mb-3">
+          <img src="assets/icons/custom.avif" alt="Custom Branding" class="w-24" width="262" height="251" loading="lazy">
+        </div>
+        <h2
+          id="feature-branding-title"
+          class="font-semibold mt-3 text-blue-600 sm:text-xl text-lg max-[480px]:text-base"
+        >
+          Custom Branding Solutions
+        </h2>
+        <p
+          id="feature-branding-desc"
+          class="mt-3 text-gray-600 text-base max-w-[22rem] mx-auto max-w-[22rem]"
+        >
+          Personalize your packaging with custom colors, logos, and designs to strengthen your brand identity.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Banner Section -->
+<div
+  id="home-banner-section"
+  class="relative py-24 sm:py-32 md:py-44 rounded-xl
+         mb-10 sm:mb-14 md:mb-20
+         mx-4 sm:mx-6 md:mx-auto
+         max-w-4xl overflow-hidden 
+         bg-no-repeat bg-center"
+  style="
+    background-image: url('assets/icons/banner.avif');
+    background-size: contain;
+  "
+>
+</div>
+
+<!-- Banner 2 Section (Blue Background) -->
+<div class="bg-blue-600 py-16">
+  <div class="mx-6 sm:mx-8 md:mx-10 lg:mx-16 max-w-none">
+    <picture>
+      <source
+        srcset="assets/icons/banner-2-mobile.avif"
+        media="(max-width: 640px)"
+      />
+      <img
+        src="assets/icons/banner-2.avif"
+        alt=""
+        class="w-full h-auto rounded-xl mx-auto max-w-[80%] sm:max-w-full"
+        loading="lazy"
+      />
+    </picture>
+  </div>
+</div>
+
+  </div> 
+  </main>
+  <!-- Products Page -->
+  <div id="products" class="page">
+   <div class="bg-blue-600 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+     <h2 id="products-title" class="text-4xl font-bold mb-4">Our Products</h2>
+     <p id="products-subtitle" class="text-xl">Choose from our comprehensive range of mailing solutions</p>
+    </div>
+   </div>
+   <div class="max-w-7xl mx-auto px-4 py-16">
+    <div class="grid md:grid-cols-2 gap-12">
+<div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow cursor-pointer" onclick="showPage('mailing-bags')">
+  
+  <div class="py-6">
+    <img
+      src="assets/products/bags.avif"
+      alt="Mailing Bags"
+      class="w-64 h-64 object-cover mx-auto block"
+    />
+  </div>
+
+  <div class="p-8">
+    <h3 id="products-mailing-bags-title" class="text-2xl font-bold mb-4 text-gray-800">Mailing Bags</h3>
+    <p id="products-mailing-bags-desc" class="text-gray-600 mb-6">
+      Durable and secure mailing bags in various sizes. Perfect for e-commerce, documents, and general shipping needs.
+    </p>
+    <div class="flex items-center text-blue-600 font-semibold">
+      <span>View Products</span>
+      <span class="ml-2">→</span>
+    </div>
+  </div>
+</div>
+
+     <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow cursor-pointer" onclick="showPage('stretch-bands')">
+  <div class="py-6">
+    <img
+      src="assets/products/band.avif"
+      alt="Mailing Bags"
+      class="w-64 h-64 object-cover mx-auto block"
+    />
+  </div>
+      <div class="p-8">
+       <h3 id="products-stretch-bands-title" class="text-2xl font-bold mb-4 text-gray-800">Stretch Bands</h3>
+       <p id="products-stretch-bands-desc" class="text-gray-600 mb-6">High-quality elastic bands for securing packages and bundling items. Available in multiple sizes.</p>
+       <div class="flex items-center text-blue-600 font-semibold"><span id="products-view-link-2">View Products</span> <span class="ml-2">→</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div><!-- Mailing Bags Page -->
+  <div id="mailing-bags" class="page">
+   <div class="bg-blue-600 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4"><button onclick="showPage('products')" class="text-white hover:text-blue-200 mb-4 flex items-center"> <span class="mr-2">←</span> <span id="mailing-bags-back-btn">Back to Products</span> </button>
+     <h2 id="mailing-bags-title" class="text-4xl font-bold mb-4">Mailing Bags</h2>
+     <p id="mailing-bags-subtitle" class="text-xl">Professional mailing solutions for every need</p>
+    </div>
+   </div>
+   <div class="max-w-7xl mx-auto px-4 py-16">
+    <!-- Mailing Bags Video and Description Section -->
+    <div class="bg-white rounded-xl shadow-lg p-8 mb-12">
+     <div class="grid lg:grid-cols-2 gap-8 items-center">
+      <div>
+<div
+  class="bg-gray-800 rounded-lg aspect-video overflow-hidden relative cursor-pointer"
+  onclick="loadYouTube(this, 'lMKGPbkHqpA')"
+>
+  <img
+    src="https://img.youtube.com/vi/lMKGPbkHqpA/hqdefault.jpg"
+    alt="Mailing Bags Product Demo"
+    class="absolute inset-0 w-full h-full object-cover"
+    loading="lazy"
+  />
+
+  <div class="absolute inset-0 flex items-center justify-center bg-black/40">
+    <svg
+      class="w-16 h-16 text-white"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+    >
+      <path d="M8 5v14l11-7z"/>
+    </svg>
+  </div>
+</div>
+
+      </div>
+      <div>
+       <h3 id="mailing-bags-video-title" class="text-3xl font-bold mb-6 text-gray-800">Mailing Bags</h3>
+       <p id="mailing-bags-video-desc1" class="text-gray-600 mb-4 leading-relaxed">Our eco-friendly Mailing Bags are designed specifically for shipping goods across e-commerce, retail and logistics operations. Produced from recycled LDPE film, these mailers provide a durable, water-resistant and are perfect shipping solution.</p>
+       <p id="mailing-bags-video-desc2" class="text-gray-600 mb-6 leading-relaxed">Available in various sizes, thicknesses, and print options, the bags can be tailored to specific business requirements. Configurations such as single or double seal strips with perforation provide reliable closure and support convenient return options, while optional handle features are available upon request. As a practical and sustainable packaging option, they ensure secure closure and protection from dispatch to delivery.</p>
+       <div class="flex flex-wrap gap-4">
+        <div class="bg-blue-100 px-4 py-2 rounded-full"><span id="mailing-bags-feature-1" class="text-blue-800 font-medium">✓ 100% Recyclable</span>
+        </div>
+        <div class="bg-blue-100 px-4 py-2 rounded-full"><span id="mailing-bags-feature-2" class="text-blue-800 font-medium">✓ Customizable</span>
+        </div>
+        <div class="bg-blue-100 px-4 py-2 rounded-full"><span id="mailing-bags-feature-3" class="text-blue-800 font-medium">✓ Multiple Sizes</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto" id="mailing-bags-grid"><!-- Products will be populated here -->
+    </div>
+   </div>
+  </div><!-- Stretch Bands Page -->
+  <div id="stretch-bands" class="page">
+   <div class="bg-blue-600 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4"><button onclick="showPage('products')" class="text-white hover:text-blue-200 mb-4 flex items-center"> <span class="mr-2">←</span> <span id="stretch-bands-back-btn">Back to Products</span> </button>
+     <h2 id="stretch-bands-title" class="text-4xl font-bold mb-4">Stretch Bands</h2>
+     <p id="stretch-bands-subtitle" class="text-xl">Reliable elastic solutions for secure packaging</p>
+    </div>
+   </div>
+   <div class="max-w-7xl mx-auto px-4 py-16">
+    <!-- Video and Description Section -->
+    <div class="bg-white rounded-xl shadow-lg p-8 mb-12">
+     <div class="grid lg:grid-cols-2 gap-8 items-center">
+      <div>
+<div
+  class="bg-gray-800 rounded-lg aspect-video overflow-hidden relative cursor-pointer"
+  onclick="loadYouTube(this, 'THbMSHXWyqo')"
+>
+  <img
+    src="https://img.youtube.com/vi/THbMSHXWyqo/hqdefault.jpg"
+    alt="Stretch Bands Product Demo"
+    class="absolute inset-0 w-full h-full object-cover"
+    loading="lazy"
+  />
+
+  <div class="absolute inset-0 flex items-center justify-center bg-black/40">
+    <svg
+      class="w-16 h-16 text-white"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+    >
+      <path d="M8 5v14l11-7z"/>
+    </svg>
+  </div>
+</div>
+
+      </div>
+      <div>
+       <h3 id="stretch-bands-video-title" class="text-3xl font-bold mb-6 text-gray-800">Stretch Bands</h3>
+       <p id="stretch-bands-video-desc1" class="text-gray-600 mb-4 leading-relaxed">The Stretch Band is a versatile pallet packaging solution designed to securely hold protection corners in place without damaging the primary packaging. It removes easily, leaving no marks and preserving the integrity and appearance of cartons and boxes.</p>
+       <p id="stretch-bands-video-desc2" class="text-gray-600 mb-6 leading-relaxed">Available in multiple widths and lengths, the Stretch Band can be tailored to specific packaging dimensions and pallet configurations. As a complementary packaging accessory, it enhances load stability and keeps products securely positioned during transportation and storage.</p>
+       <div class="flex flex-wrap gap-4">
+        <div class="bg-blue-100 px-4 py-2 rounded-full"><span id="stretch-bands-feature-1" class="text-blue-800 font-medium">✓ Package-safe</span>
+        </div>
+        <div class="bg-blue-100 px-4 py-2 rounded-full"><span id="stretch-bands-feature-2" class="text-blue-800 font-medium">✓ Easy to apply</span>
+        </div>
+        <div class="bg-blue-100 px-4 py-2 rounded-full"><span id="stretch-bands-feature-3" class="text-blue-800 font-medium">✓ Multiple Sizes</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!-- Products Grid -->
+    <h3 id="stretch-bands-products-heading" class="text-2xl font-bold mb-8 text-center text-gray-800">Our Stretch Band Products</h3>
+<div class="grid md:grid-cols-3 gap-8">
+
+  <!-- Card 1 -->
+  <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+    <div class="h-48 flex items-center justify-center">
+      <img
+        src="assets/products/stretch-band.avif"
+        alt="Standard Stretch Bands"
+        class="w-full h-full object-contain"
+      />
+    </div>
+
+    <div class="p-6 flex flex-col flex-1">
+      <h4 id="stretch-bands-standard-title" class="text-xl font-bold mb-3">
+        Standard Bands
+      </h4>
+
+      <p id="stretch-bands-standard-desc" class="text-gray-600 mb-4">
+        Designed for reliable load stabilization in everyday packaging operations. With a 100 mm width, they provide consistent holding force while remaining easy to apply and remove, making them ideal for routine pallet and carton securing.
+      </p>
+
+      <button
+        onclick="requestQuote('Standard Bands')"
+        class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors mt-auto"
+      >
+        <span id="stretch-bands-quote-btn-1">Request Quote</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+    <div class="h-48 flex items-center justify-center">
+      <img
+        src="assets/products/band.avif"
+        alt="Heavy Duty Stretch Bands"
+        class="w-full h-full object-contain"
+      />
+    </div>
+
+    <div class="p-6 flex flex-col flex-1">
+      <h4 id="stretch-bands-heavy-title" class="text-xl font-bold mb-3">
+        Heavy Duty Bands
+      </h4>
+
+      <p id="stretch-bands-heavy-desc" class="text-gray-600 mb-4">
+        Extra strong bands for securing heavy packages and industrial applications. Ideal for stabilizing bulky or heavy packages. Available in widths from 150 to 200 mm.
+      </p>
+
+      <button
+        onclick="requestQuote('Heavy Duty Bands')"
+        class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors mt-auto"
+      >
+        <span id="stretch-bands-quote-btn-2">Request Quote</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+    <div class="h-48 flex items-center justify-center">
+      <img
+        src="assets/products/color-band.avif"
+        alt="Colored Stretch Bands"
+        class="w-full h-full object-contain"
+      />
+    </div>
+
+    <div class="p-6 flex flex-col flex-1">
+      <h4 id="stretch-bands-colored-title" class="text-xl font-bold mb-3">
+        Colored Bands
+      </h4>
+
+      <p id="stretch-bands-colored-desc" class="text-gray-600 mb-4">
+        Designed for pallet identification and visual marking in storage and logistics environments. Also suitable for use in the food industry – secure liners in containers while providing high visibility for easy contamination detection.
+      </p>
+
+      <button
+        onclick="requestQuote('Colored Bands')"
+        class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors mt-auto"
+      >
+        <span id="stretch-bands-quote-btn-3">Request Quote</span>
+      </button>
+    </div>
+  </div>
+
+</div>
+
+   </div>
+  </div><!-- About Page -->
+  <div id="about" class="page">
+   <div class="bg-blue-600 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+     <h2 id="about-title" class="text-4xl font-bold mb-4">About Aiventus</h2>
+     <p id="about-subtitle" class="text-xl">Your trusted partner in packaging solutions</p>
+    </div>
+   </div>
+   <div class="max-w-7xl mx-auto px-4 py-16">
+    <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+     <div>
+      <h3 id="about-our-story-title" class="text-3xl font-bold mb-8 text-gray-800">Our Story</h3>
+      <p id="about-story-text1" class="text-gray-600 mb-4 leading-relaxed">Founded in 2015, Aiventus has been at the forefront of packaging innovation for nearly a decade. What started as a small business has grown into a leading manufacturer trusted by businesses worldwide.</p>
+      <p id="about-story-text2" class="text-gray-600 mb-6 leading-relaxed">We specialize in creating high-quality mailing bags and stretch bands that meet the evolving needs of modern commerce. Our commitment to quality, sustainability, and customer satisfaction drives everything we do.</p>
+     </div>
+<div
+  class="relative rounded-xl overflow-hidden bg-center bg-no-repeat min-h-[320px]"
+  style="
+    background-image: url('assets/icons/hero-banner.avif');
+    background-size: 110%;
+  "
+></div>
+
+    </div>
+   </div>
+  </div><!-- FAQ Page -->
+  <div id="faq" class="page">
+   <div class="bg-blue-600 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4"><button onclick="showPage('home')" class="text-white hover:text-blue-200 mb-4 flex items-center"> <span class="mr-2">←</span> Back to Home </button>
+     <h2 class="text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+     <p class="text-xl">Find answers to common questions about our products and services</p>
+    </div>
+   </div>
+   <div class="max-w-4xl mx-auto px-4 py-16"><!-- General Questions -->
+    <div class="mb-12">
+     <h3 class="text-2xl font-bold mb-6 text-gray-800">General Questions</h3>
+     <div class="space-y-4">
+      <div class="bg-white rounded-lg shadow-md overflow-hidden"><button onclick="toggleFAQ('faq1')" class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors"> <span class="font-semibold text-gray-800">What products does Aiventus manufacture?</span>
+        <svg id="faq1-icon" class="w-5 h-5 text-blue-600 transform transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg></button>
+       <div id="faq1" class="hidden px-6 pb-6">
+        <p class="text-gray-600 leading-relaxed">We specialize in manufacturing premium mailing bags and stretch bands. Our mailing bags come in various types including standard bags, colored bags, printed bags with custom branding, and bags with handles. Our stretch bands are available in heavy duty, standard, and light duty options.</p>
+       </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden"><button onclick="toggleFAQ('faq2')" class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors"> <span class="font-semibold text-gray-800">Are your products eco-friendly?</span>
+        <svg id="faq2-icon" class="w-5 h-5 text-blue-600 transform transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg></button>
+       <div id="faq2" class="hidden px-6 pb-6">
+        <p class="text-gray-600 leading-relaxed">Yes! We prioritize sustainable materials and practices to reduce environmental impact at every stage of production. Our products are designed with eco-consciousness in mind, and we continuously work to improve our sustainability initiatives.</p>
+       </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden"><button onclick="toggleFAQ('faq3')" class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors"> <span class="font-semibold text-gray-800">Do you have ISO certification?</span>
+        <svg id="faq3-icon" class="w-5 h-5 text-blue-600 transform transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg></button>
+       <div id="faq3" class="hidden px-6 pb-6">
+        <p class="text-gray-600 leading-relaxed">Yes, we are ISO certified. Our production processes meet rigorous international standards to ensure consistent quality and reliability in every product we manufacture.</p>
+       </div>
+      </div>
+     </div>
+    </div><!-- Ordering & Customization -->
+    <div class="mb-12">
+     <h3 class="text-2xl font-bold mb-6 text-gray-800">Ordering &amp; Customization</h3>
+     <div class="space-y-4">
+      <div class="bg-white rounded-lg shadow-md overflow-hidden"><button onclick="toggleFAQ('faq4')" class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors"> <span class="font-semibold text-gray-800">Can I customize the size of mailing bags?</span>
+        <svg id="faq4-icon" class="w-5 h-5 text-blue-600 transform transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg></button>
+       <div id="faq4" class="hidden px-6 pb-6">
+        <p class="text-gray-600 leading-relaxed">Absolutely! We manufacture mailing bags according to your specific requirements. Both length and width can be customized to meet your exact needs. Contact us with your specifications for a quote.</p>
+       </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden"><button onclick="toggleFAQ('faq5')" class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors"> <span class="font-semibold text-gray-800">Do you offer custom printing on mailing bags?</span>
+        <svg id="faq5-icon" class="w-5 h-5 text-blue-600 transform transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg></button>
+       <div id="faq5" class="hidden px-6 pb-6">
+        <p class="=" text-gray-600 leading-relaxed>Yes! We offer custom logo and branding print options on our mailing bags. You can choose single or double full-color designs, making them ideal for promotions, branding, and retail packaging. Contact us to discuss your design requirements.</p>
+       </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden"><button onclick="toggleFAQ('faq6')" class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors"> <span class="font-semibold text-gray-800">What is the minimum order quantity?</span>
+        <svg id="faq6-icon" class="w-5 h-5 text-blue-600 transform transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg></button>
+       <div id="faq6" class="hidden px-6 pb-6">
+        <p class="text-gray-600 leading-relaxed">Minimum order quantities vary depending on the product type and customization requirements. We offer competitive bulk pricing for larger orders. Please contact us with your specific needs, and we'll provide you with detailed information and a custom quote.</p>
+       </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden"><button onclick="toggleFAQ('faq7')" class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors"> <span class="font-semibold text-gray-800">Can I order bags in custom colors?</span>
+        <svg id="faq7-icon" class="w-5 h-5 text-blue-600 transform transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg></button>
+       <div id="faq7" class="hidden px-6 pb-6">
+        <p class="text-gray-600 leading-relaxed">Yes! Our colored mailing bags are available in a wide range of solid and custom colors. We use fade-resistant pigments for long-lasting appearance. Contact us with your color specifications or Pantone codes.</p>
+       </div>
+      </div>
+     </div>
+    </div><!-- Shipping & Delivery -->
+    <div class="mb-12">
+     <h3 class="text-2xl font-bold mb-6 text-gray-800">Shipping &amp; Delivery</h3>
+     <div class="space-y-4">
+      <div class="bg-white rounded-lg shadow-md overflow-hidden"><button onclick="toggleFAQ('faq8')" class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors"> <span class="font-semibold text-gray-800">How long does delivery take?</span>
+        <svg id="faq8-icon" class="w-5 h-5 text-blue-600 transform transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg></button>
+       <div id="faq8" class="hidden px-6 pb-6">
+        <p class="text-gray-600 leading-relaxed">We pride ourselves on fast shipping and efficient logistics. Delivery times vary depending on your location and order size. Standard orders typically ship within 5-7 business days. For urgent orders or specific delivery requirements, please contact us to discuss expedited options.</p>
+       </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden"><button onclick="toggleFAQ('faq9')" class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors"> <span class="font-semibold text-gray-800">Do you ship internationally?</span>
+        <svg id="faq9-icon" class="w-5 h-5 text-blue-600 transform transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg></button>
+       <div id="faq9" class="hidden px-6 pb-6">
+        <p class="text-gray-600 leading-relaxed">Yes, we ship to customers worldwide. We have experience working with businesses across multiple countries and can arrange international shipping for your orders. Contact us for international shipping rates and delivery estimates.</p>
+       </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden"><button onclick="toggleFAQ('faq10')" class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors"> <span class="font-semibold text-gray-800">What are the shipping costs?</span>
+        <svg id="faq10-icon" class="w-5 h-5 text-blue-600 transform transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg></button>
+       <div id="faq10" class="hidden px-6 pb-6">
+        <p class="text-gray-600 leading-relaxed">Shipping costs depend on the order size, weight, and destination. We offer competitive shipping rates and can provide bulk shipping discounts for large orders. Request a quote to receive detailed shipping cost information for your specific order.</p>
+       </div>
+      </div>
+     </div>
+    </div>
+<!-- Contact CTA -->
+    <div class="bg-blue-50 rounded-xl p-8 text-center">
+     <h3 class="text-2xl font-bold mb-4 text-gray-800">Still Have Questions?</h3>
+     <p class="text-gray-600 mb-6">Can't find the answer you're looking for? Our team is here to help!</p><button onclick="showPage('contact')" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">Contact Us</button>
+    </div>
+   </div>
+  </div><!-- Contact Page -->
+  <div id="contact" class="page">
+   <div class="bg-blue-600 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+     <h2 id="contact-title" class="text-4xl font-bold mb-4">Contact Us</h2>
+     <p id="contact-subtitle" class="text-xl">Get in touch for quotes and inquiries</p>
+    </div>
+   </div>
+   <div class="max-w-7xl mx-auto px-4 py-16">
+    <div class="grid lg:grid-cols-2 gap-12">
+<div>
+  <h3 id="contact-get-in-touch" class="text-2xl font-bold mb-6 text-gray-800">
+    Get In Touch
+  </h3>
+
+  <div class="space-y-6">
+
+    <!-- Phone -->
+    <div class="flex items-start">
+      <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 mt-1">
+        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+        </svg>
+      </div>
+      <div>
+        <h4 id="contact-phone-label" class="font-semibold text-gray-800">Phone</h4>
+        <p class="text-gray-600">+370 655 08084</p>
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div class="flex items-start">
+      <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 mt-1">
+        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+      </div>
+      <div>
+        <h4 id="contact-email-label" class="font-semibold text-gray-800">Email</h4>
+        <p class="text-gray-600">info@aiventus.com</p>
+      </div>
+    </div>
+
+    <!-- LinkedIn -->
+    <div class="flex items-start">
+      <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 mt-1">
+        <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M4.98 3.5a2.5 2.5 0 11-.01 5.01A2.5 2.5 0 014.98 3.5zM3 8.98h3.96V21H3V8.98zM9.02 8.98h3.8v1.64h.05c.53-1 1.82-2.05 3.74-2.05 4 0 4.74 2.63 4.74 6.05V21h-3.96v-5.45c0-1.3-.02-2.98-1.82-2.98-1.82 0-2.1 1.42-2.1 2.88V21H9.02V8.98z" />
+        </svg>
+      </div>
+      <div>
+        <h4 class="font-semibold text-gray-800">LinkedIn</h4>
+        <a
+          href="https://www.linkedin.com/company/aiventus"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-gray-600 hover:text-blue-600 transition"
+        >
+          linkedin.com/company/aiventus
+        </a>
+      </div>
+    </div>
+
+    <!-- Address -->
+    <div class="flex items-start">
+      <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 mt-1">
+        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+      </div>
+      <div>
+        <h4 id="contact-address-label" class="font-semibold text-gray-800">Address</h4>
+        <p class="text-gray-600">
+          Guobų g. 2<br>
+          Vilnius, Lithuania<br>
+          LT-02236
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+     <div class="bg-white rounded-xl shadow-lg p-8">
+      <h3 id="contact-find-us" class="text-2xl font-bold mb-6 text-gray-800">Find Us</h3><!-- Interactive Map -->
+      <div class="mb-6">
+       <div class="bg-gray-100 rounded-lg overflow-hidden shadow-inner" style="height: 400px; position: relative;"><!-- Google Maps Embed --> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2304.8757446897684!2d25.254491776918847!3d54.67945087356081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd941c8e6f7c8f%3A0x8b9d7d7d7d7d7d7d!2zR3VvYsWrIGcuIDIsIFZpbG5pdXMgMDIyMzY!5e0!3m2!1sen!2slt!4v1234567890123!5m2!1sen!2slt" width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-full"> </iframe>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div><!-- Admin Page -->
+  <div id="admin" class="page">
+   <div class="bg-gray-800 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+     <h2 class="text-4xl font-bold mb-4">Admin Panel</h2>
+     <p class="text-xl">Manage banner and products</p>
+    </div>
+   </div><!-- Login Section -->
+   <div id="admin-login" class="max-w-md mx-auto px-4 py-16">
+    <div class="bg-white rounded-xl shadow-lg p-8">
+     <h3 class="text-2xl font-bold mb-6 text-center text-gray-800">Admin Login</h3>
+     <form class="space-y-4" onsubmit="adminLogin(); return false;">
+      <div><label class="block text-sm font-medium text-gray-700 mb-2">Username</label> <input type="text" id="admin-username" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Enter username" value="admin">
+      </div>
+      <div><label class="block text-sm font-medium text-gray-700 mb-2">Password</label> <input type="password" id="admin-password" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Enter password" value="password123">
+      </div><button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">Login</button>
+     </form><!-- Additional Options -->
+     <div class="mt-4 flex justify-between text-sm"><button onclick="showForgotPassword()" class="text-blue-600 hover:text-blue-800 transition-colors">Forgot Password?</button> <button onclick="showCreateUser()" class="text-blue-600 hover:text-blue-800 transition-colors">Create New User</button>
+     </div>
+     <div class="mt-4 p-3 bg-blue-50 rounded-lg">
+      <p class="text-blue-800 text-sm"><strong>Demo Credentials:</strong><br>
+        Username: admin<br>
+        Password: password123</p>
+     </div>
+    </div>
+   </div><!-- Forgot Password Section -->
+   <div id="forgot-password" class="max-w-md mx-auto px-4 py-16" style="display: none;">
+    <div class="bg-white rounded-xl shadow-lg p-8">
+     <h3 class="text-2xl font-bold mb-6 text-center text-gray-800">Reset Password</h3>
+     <p class="text-gray-600 text-center mb-6">Enter your username or email to receive password reset instructions.</p>
+     <form class="space-y-4" onsubmit="resetPassword(); return false;">
+      <div><label class="block text-sm font-medium text-gray-700 mb-2">Username or Email</label> <input type="text" id="reset-username" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Enter username or email">
+      </div><button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">Send Reset Link</button>
+     </form>
+     <div class="mt-4 text-center"><button onclick="showLogin()" class="text-blue-600 hover:text-blue-800 transition-colors text-sm">← Back to Login</button>
+     </div>
+     <div class="mt-4 p-3 bg-yellow-50 border border-yellow-200 rounded-lg">
+      <p class="text-yellow-800 text-sm"><strong>Demo Mode:</strong> In a real implementation, this would send an email with reset instructions.</p>
+     </div>
+    </div>
+   </div><!-- Create User Section -->
+   <div id="create-user" class="max-w-md mx-auto px-4 py-16" style="display: none;">
+    <div class="bg-white rounded-xl shadow-lg p-8">
+     <h3 class="text-2xl font-bold mb-6 text-center text-gray-800">Create New User</h3>
+     <form class="space-y-4" onsubmit="createUser(); return false;">
+      <div><label class="block text-sm font-medium text-gray-700 mb-2">Full Name</label> <input type="text" id="new-fullname" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Enter full name" required>
+      </div>
+      <div><label class="block text-sm font-medium text-gray-700 mb-2">Username</label> <input type="text" id="new-username" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Choose username" required>
+      </div>
+      <div><label class="block text-sm font-medium text-gray-700 mb-2">Email</label> <input type="email" id="new-email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Enter email address" required>
+      </div>
+      <div><label class="block text-sm font-medium text-gray-700 mb-2">Password</label> <input type="password" id="new-password" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Create password" required>
+      </div>
+      <div><label class="block text-sm font-medium text-gray-700 mb-2">Confirm Password</label> <input type="password" id="confirm-password" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Confirm password" required>
+      </div>
+      <div><label class="block text-sm font-medium text-gray-700 mb-2">Role</label> <select id="new-role" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"> <option value="admin">Administrator</option> <option value="editor">Editor</option> <option value="viewer">Viewer</option> </select>
+      </div><button type="submit" class="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">Create User</button>
+     </form>
+     <div class="mt-4 text-center"><button onclick="showLogin()" class="text-blue-600 hover:text-blue-800 transition-colors text-sm">← Back to Login</button>
+     </div>
+     <div class="mt-4 p-3 bg-yellow-50 border border-yellow-200 rounded-lg">
+      <p class="text-yellow-800 text-sm"><strong>Demo Mode:</strong> In a real implementation, this would create a new user account in your system.</p>
+     </div>
+    </div>
+   </div><!-- Admin Dashboard -->
+   <div id="admin-dashboard" class="max-w-7xl mx-auto px-4 py-16" style="display: none;">
+    <div class="flex justify-between items-center mb-8">
+     <h3 class="text-2xl font-bold text-gray-800">Dashboard</h3><button onclick="adminLogout()" class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">Logout</button>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-8"><!-- Banner Management -->
+     <div class="bg-white rounded-xl shadow-lg p-8">
+      <h4 class="text-xl font-bold mb-6 text-gray-800">Banner Management</h4><!-- Current Banner Preview -->
+      <div class="mb-6"><label class="block text-sm font-medium text-gray-700 mb-2">Current Banner</label>
+       <div id="current-banner-preview" class="border-2 border-dashed border-gray-300 rounded-lg p-4 bg-gray-50">
+        <div class="bg-gradient-to-r from-green-600 to-green-800 text-white py-8 rounded-lg text-center">
+         <div class="text-4xl mb-2">
+          🎯
+         </div>
+         <h3 class="text-xl font-bold mb-2">Special Offers Available</h3>
+         <p class="text-sm">Contact us today for bulk pricing and custom solutions</p>
+        </div>
+        <p class="text-xs text-gray-500 mt-2 text-center">Current banner (placeholder design)</p>
+       </div>
+      </div>
+      <div class="space-y-4">
+       <div><label class="block text-sm font-medium text-gray-700 mb-2">Upload New Banner Image</label>
+        <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-blue-400 transition-colors cursor-pointer" onclick="document.getElementById('banner-upload').click()"><input type="file" id="banner-upload" accept="image/*" class="hidden" onchange="previewBanner(event)">
+         <div id="upload-area">
+          <div class="text-4xl mb-2">
+          </div>
+          <p class="text-gray-600 mb-1">Click to upload banner image</p>
+          <p class="text-xs text-gray-500">Supports JPG, PNG, GIF (Max 5MB)</p>
+          <p class="text-xs text-gray-500 mt-1">Recommended size: 1200x400px</p>
+         </div>
+        </div>
+       </div><!-- Banner Preview -->
+       <div id="banner-preview-container" class="hidden"><label class="block text-sm font-medium text-gray-700 mb-2">New Banner Preview</label>
+        <div class="border rounded-lg overflow-hidden"><img id="banner-preview" class="w-full h-32 object-cover" alt="Banner preview">
+        </div>
+        <div class="flex justify-between items-center mt-2"><span id="file-info" class="text-xs text-gray-500"></span> <button onclick="clearBannerPreview()" class="text-red-600 hover:text-red-800 text-xs">Remove</button>
+        </div>
+       </div><button onclick="uploadBanner()" id="upload-banner-btn" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed" disabled>Upload Banner</button> <!-- Demo Notice -->
+       <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3">
+        <p class="text-yellow-800 text-xs"><strong>Demo Mode:</strong> In a real implementation, this would upload the image to your server and update the website banner. The preview shows how it would look.</p>
+       </div>
+      </div>
+     </div><!-- Product Management -->
+     <div class="bg-white rounded-xl shadow-lg p-8">
+      <h4 class="text-xl font-bold mb-6 text-gray-800">Add New Mailing Bag Product</h4>
+      <div class="space-y-4">
+       <div><label class="block text-sm font-medium text-gray-700 mb-2">Product Name</label> <input type="text" id="product-name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Enter product name">
+       </div>
+       <div><label class="block text-sm font-medium text-gray-700 mb-2">Product Description</label> <textarea id="product-description" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Enter product description"></textarea>
+       </div>
+       <div><label class="block text-sm font-medium text-gray-700 mb-2">Product Image</label>
+        <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-blue-400 transition-colors cursor-pointer" onclick="document.getElementById('product-image-upload').click()"><input type="file" id="product-image-upload" accept="image/*" class="hidden" onchange="previewProductImage(event)">
+         <div id="product-upload-area">
+          <div class="text-4xl mb-2">
+           🖼️
+          </div>
+          <p class="text-gray-600 mb-1">Click to upload product image</p>
+          <p class="text-xs text-gray-500">Supports JPG, PNG, GIF (Max 5MB)</p>
+          <p class="text-xs text-gray-500 mt-1">Recommended size: 400x300px</p>
+         </div>
+        </div>
+       </div><!-- Product Image Preview -->
+       <div id="product-image-preview-container" class="hidden"><label class="block text-sm font-medium text-gray-700 mb-2">Product Image Preview</label>
+        <div class="border rounded-lg overflow-hidden"><img id="product-image-preview" class="w-full h-48 object-cover" alt="Product preview">
+        </div>
+        <div class="flex justify-between items-center mt-2"><span id="product-file-info" class="text-xs text-gray-500"></span> <button onclick="clearProductImagePreview()" class="text-red-600 hover:text-red-800 text-xs">Remove</button>
+        </div>
+       </div><button onclick="addProduct()" id="add-product-btn" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed" disabled>Add Product</button> <!-- Demo Notice -->
+       <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3">
+        <p class="text-yellow-800 text-xs"><strong>Demo Mode:</strong> In a real implementation, this would upload the product image to your server and create the new product listing.</p>
+       </div>
+      </div>
+     </div>
+    </div><!-- Current Products -->
+    <div class="bg-white rounded-xl shadow-lg p-8 mt-8">
+     <h4 class="text-xl font-bold mb-6 text-gray-800">Current Mailing Bag Products</h4>
+     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4" id="admin-products-list"><!-- Products will be populated here -->
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+   <div class="max-w-7xl mx-auto px-4">
+    <div class="grid md:grid-cols-4 gap-6">
+     <div>
+      <h3 class="text-lg font-bold mb-3">Aiventus</h3>
+      <p id="footer-tagline" class="text-gray-300 text-sm mb-3">Leading manufacturer of premium<br>
+       mailing bags and stretch bands.<br>
+       Quality you can trust.</p>
+     </div>
+     <div>
+      <h4 id="footer-products-title" class="text-base font-semibold mb-3">Products</h4>
+      <ul class="space-y-1.5 text-gray-300 text-sm">
+       <li><a href="#" onclick="showPage('mailing-bags')" class="hover:text-white transition-colors"><span id="footer-mailing-bags">Mailing Bags</span></a></li>
+       <li><a href="#" onclick="showPage('stretch-bands')" class="hover:text-white transition-colors"><span id="footer-stretch-bands">Stretch Bands</span></a></li>
+      </ul>
+     </div>
+     <div>
+      <h4 id="footer-company-title" class="text-base font-semibold mb-3">Company</h4>
+      <ul class="space-y-1.5 text-gray-300 text-sm">
+       <li><a href="#" onclick="showPage('about')" class="hover:text-white transition-colors"><span id="footer-about-us">About Us</span></a></li>
+       <li><a href="#" onclick="showPage('contact')" class="hover:text-white transition-colors"><span id="footer-contact">Contact</span></a></li>
+      </ul>
+     </div>
+     <div>
+      <h4 id="footer-support-title" class="text-base font-semibold mb-3">Support</h4>
+      <ul class="space-y-1.5 text-gray-300 text-sm">
+       <li><a href="#" onclick="showPage('faq')" class="hover:text-white transition-colors"><span id="footer-faq">FAQ</span></a></li>
+       <li><a href="#" class="hover:text-white transition-colors"><span id="footer-shipping-info">Shipping Info</span></a></li>
+      </ul>
+     </div>
+    </div>
+    <div class="border-t border-gray-700 mt-6 pt-6 flex flex-col md:flex-row justify-between items-center">
+     <p id="footer-copyright" class="text-gray-300 text-xs">© 2026 Aiventus. All rights reserved.</p>
+     <div class="flex space-x-6 mt-3 md:mt-0"><a href="#" class="text-gray-300 hover:text-white text-xs transition-colors"><span id="footer-privacy">Privacy Policy</span></a> <a href="#" class="text-gray-300 hover:text-white text-xs transition-colors"><span id="footer-terms">Terms of Service</span></a> <a href="#" class="text-gray-300 hover:text-white text-xs transition-colors"><span id="footer-cookies">Cookie Policy</span></a>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <script>
+        // Translation System
+        let currentLanguage = 'en';
+        
+        const translations = {
+            en: {
+                nav: {
+                    home: 'Home',
+                    products: 'Products',
+                    about: 'About',
+                    contact: 'Contact',
+                    admin: 'Admin'
+                },
+                language: {
+                    select: 'Language'
+                },
+                home: {
+                    banner_title: 'Producer of Your Mailing bags.',
+                    banner_description: 'Recyclable. Eco-friendly. Smarter e-commerce packaging for your businesses.',
+                    banner_button: 'Explore Products',
+                    iso_certified: 'ISO Certified',
+                    iso_description: 'Our production processes meet rigorous international standards to ensure consistent quality and reliability.',
+                    recyclable: 'Recyclable',
+                    recyclable_description: 'Our mailing bags are fully recyclable, helping your business reduce waste and support a circular economy.',
+                    custom_branding: 'Custom Branding Solutions',
+                    custom_branding_description: 'Personalize your packaging with custom colors, logos, and designs to strengthen your brand identity.',
+                    special_offers_title: 'Special Offers Available',
+                    special_offers_description: 'Contact us today for bulk pricing and custom solutions tailored to your business needs.',
+                    explore_products: 'Explore Products',
+                },
+                products: {
+                    title: 'Our Products',
+                    subtitle: 'Choose from our comprehensive range of mailing solutions',
+                    mailing_bags_title: 'Mailing Bags',
+                    mailing_bags_description: 'Durable and secure mailing bags in various sizes. Perfect for e-commerce, documents, and general shipping needs.',
+                    stretch_bands_title: 'Stretch Bands',
+                    stretch_bands_description: 'High-quality elastic bands for securing packages and bundling items. Available in multiple sizes.',
+                    view_products: 'View Products',
+                    back_to_products: 'Back to Products',
+                    mailing_bags_page_title: 'Mailing Bags',
+                    mailing_bags_page_subtitle: 'Professional mailing solutions for every need',
+                    mailing_bags_video_title: 'Mailing Bags',
+                    mailing_bags_video_desc1: 'Our eco-friendly Mailing Bags are designed specifically for shipping goods across e-commerce, retail and logistics operations. Produced from recycled LDPE film, these mailers provide a durable, water-resistant and reliable shipping solution.',
+                    mailing_bags_video_desc2: 'Available in various sizes, thicknesses, and print options, the bags can be tailored to specific business requirements. Configurations such as single or double seal strips with perforation provide secure closure and convenient return options, while optional handle features are available upon request.',
+                    standard_mailing_bags: 'Standard Mailing bags',
+                    standard_mailing_bags_desc: '• Available in 13 sizes<br>• With one seal strip<br>• MOQ of one box per size',
+                    customized_mailing_bags: 'Custom Mailing bags',
+                    customized_mailing_bags_desc: '• Returnable packaging- 2 seal strips and perforation<br>• Carrying handle option - great for customer convenience<br>• Custom sizes<br>• Custom logo and branding print options',
+                    stretch_bands_page_title: 'Stretch Bands',
+                    stretch_bands_page_subtitle: 'Reliable elastic solutions for secure packaging',
+                    stretch_bands_video_title: 'Stretch Bands',
+                    stretch_bands_video_desc1: 'The Stretch Band is a versatile pallet packaging solution designed to securely hold protection corners in place without damaging the primary packaging. It removes easily, leaving no marks and preserving the integrity and appearance of cartons and boxes.',
+                    stretch_bands_video_desc2: 'Available in multiple widths and lengths, the Stretch Band can be tailored to specific packaging dimensions and pallet configurations. As a complementary packaging accessory, it enhances load stability and keeps products securely positioned during transportation and storage.',
+                    recyclable: '✓ 100% Recyclable',
+                    customizable: '✓ Customizable',
+                    package_safe: '✓ Package-safe',
+                    easy_to_apply: '✓ Easy to apply',
+                    multiple_sizes: '✓ Multiple Sizes',
+                    our_stretch_band_products: 'Our Stretch Band Products',
+                    standard_bands: 'Standard Bands',
+                    standard_bands_desc: 'Designed for reliable load stabilization in everyday packaging operations. With a 100 mm width, they provide consistent holding force while remaining easy to apply and remove, making them ideal for routine pallet and carton securing.',
+                    heavy_duty_bands: 'Heavy Duty Bands',
+                    heavy_duty_bands_desc: 'Extra strong bands for securing heavy packages and industrial applications. Ideal for stabilizing bulky or heavy packages. Available in widths from 150 to 200 mm.',
+                    colored_bands: 'Colored Bands',
+                    colored_bands_desc: 'Designed for pallet identification and visual marking in storage and logistics environments. Also suitable for use in the food industry- secure liners in containers while providing high visibility for easy contamination detection.',
+                    request_quote: 'Request Quote'
+                },
+                about: {
+                    title: 'About Aiventus',
+                    subtitle: 'Your trusted partner in packaging solutions',
+                    our_story: 'Our Story',
+                    story_text1: 'Founded in 2015, Aiventus has been at the forefront of packaging innovation for nearly a decade. What started as a small business has grown into a leading manufacturer trusted by businesses worldwide.',
+                    story_text2: 'We specialize in creating high-quality mailing bags and stretch bands that meet the evolving needs of modern commerce. Our commitment to quality, sustainability, and customer satisfaction drives everything we do.',
+                    years_title: '10+ Years',
+                    years_desc: 'of Manufacturing Excellence'
+                },
+                contact: {
+                    title: 'Contact Us',
+                    subtitle: 'Get in touch for quotes and inquiries',
+                    get_in_touch: 'Get In Touch',
+                    phone: 'Phone',
+                    email: 'Email',
+                    address: 'Address',
+                    find_us: 'Find Us',
+                    our_location: '📍 Our Location',
+                    get_directions: '🗺️ Get Directions',
+                    street_view: '👁️ Street View',
+                    business_hours: '🕒 Business Hours',
+                    monday_friday: 'Monday - Friday:',
+                    monday_friday_hours: '8:00 AM - 6:00 PM',
+                    saturday: 'Saturday:',
+                    saturday_hours: '9:00 AM - 4:00 PM',
+                    sunday: 'Sunday:',
+                    sunday_hours: 'Closed',
+                    holidays: 'Holidays:',
+                    holidays_hours: 'Closed'
+                },
+                footer: {
+                    tagline: 'Leading manufacturer of premium\nmailing bags and stretch bands.\nQuality you can trust.',
+                    products: 'Products',
+                    mailing_bags: 'Mailing Bags',
+                    stretch_bands: 'Stretch Bands',
+                    company: 'Company',
+                    about_us: 'About Us',
+                    contact: 'Contact',
+                    support: 'Support',
+                    faq: 'FAQ',
+                    shipping_info: 'Shipping Info',
+                    copyright: '© 2026 Aiventus. All rights reserved.',
+                    privacy_policy: 'Privacy Policy',
+                    terms_of_service: 'Terms of Service',
+                    cookie_policy: 'Cookie Policy'
+                }
+            },
+            de: {
+                nav: {
+                    home: 'Startseite',
+                    products: 'Produkte',
+                    about: 'Über uns',
+                    contact: 'Kontakt',
+                    admin: 'Admin'
+                },
+                language: {
+                    select: 'Sprache'
+                },
+                home: {
+                    banner_title: 'Hersteller Ihrer Versandtaschen.',
+                    banner_description: 'Recycelbar. Umweltfreundlich. Intelligentere E-Commerce-Verpackungen für Ihr Unternehmen.',
+                    banner_button: 'Produkte erkunden',
+                    iso_certified: 'ISO-zertifiziert',
+                    iso_description: 'Unsere Produktionsprozesse erfüllen strenge internationale Standards, um gleichbleibende Qualität und Zuverlässigkeit zu gewährleisten.',
+                    recyclable: 'Recycelbar',
+                    recyclable_description: 'Unsere Versandtaschen sind vollständig recycelbar und helfen Ihrem Unternehmen, Abfall zu reduzieren und eine Kreislaufwirtschaft zu unterstützen.',
+                    custom_branding: 'Individuelle Branding-Lösungen',
+                    custom_branding_description: 'Personalisieren Sie Ihre Verpackung mit individuellen Farben, Logos und Designs, um Ihre Markenidentität zu stärken.',
+                    special_offers_title: 'Sonderangebote verfügbar',
+                    special_offers_description: 'Kontaktieren Sie uns noch heute für Mengenpreise und maßgeschneiderte Lösungen für Ihr Unternehmen.',
+                    explore_products: 'Produkte Entdecken',
+                },
+                products: {
+                    title: 'Unsere Produkte',
+                    subtitle: 'Wählen Sie aus unserem umfassenden Sortiment an Versandlösungen',
+                    mailing_bags_title: 'Versandtaschen',
+                    mailing_bags_description: 'Langlebige und sichere Versandtaschen in verschiedenen Größen. Perfekt für E-Commerce, Dokumente und allgemeine Versandbedürfnisse.',
+                    stretch_bands_title: 'Dehnbänder',
+                    stretch_bands_description: 'Hochwertige elastische Bänder zum Sichern von Paketen und Bündeln von Artikeln. In mehreren Größen erhältlich.',
+                    view_products: 'Produkte ansehen',
+                    back_to_products: 'Zurück zu Produkten',
+                    mailing_bags_page_title: 'Versandtaschen',
+                    mailing_bags_page_subtitle: 'Professionelle Versandlösungen für jeden Bedarf',
+                    mailing_bags_video_title: 'Versandtaschen',
+                    mailing_bags_video_desc1: 'Unsere umweltfreundlichen Versandtaschen wurden speziell für den Versand von Waren im E-Commerce, Einzelhandel und der Logistik entwickelt. Hergestellt aus recycelter LDPE-Folie bieten sie eine langlebige, wasserabweisende und zuverlässige Versandlösung.',
+                    mailing_bags_video_desc2: 'Erhältlich in verschiedenen Größen, Stärken und Druckoptionen können die Versandtaschen an spezifische Geschäftsanforderungen angepasst werden. Konfigurationen mit ein- oder doppelseitigen Verschlussstreifen mit Perforation sorgen für sicheren Verschluss und komfortable Rücksendemöglichkeiten, während optionale Tragegriffe auf Anfrage verfügbar sind.',
+                    standard_mailing_bags: 'Standard-Versandtaschen',
+                    standard_mailing_bags_desc: '• Verfügbar in 13 Größen<br>• Mit einem Versiegelungsstreifen<br>• Mindestbestellmenge einer Box pro Größe',
+                    customized_mailing_bags: 'Individuelle Versandtaschen',
+                    customized_mailing_bags_desc: '• Rückführbare Verpackung - 2 Versiegelungsstreifen und Perforation<br>• Tragegriff-Option - ideal für Kundenkomfort<br>• Individuelle Größen<br>• Individuelle Logo- und Branding-Druckoptionen',
+                    stretch_bands_page_title: 'Dehnbänder',
+                    stretch_bands_page_subtitle: 'Zuverlässige elastische Lösungen für sichere Verpackung',
+                    stretch_bands_video_title: 'Dehnbänder',
+                    stretch_bands_video_desc1: 'Das Dehnband ist eine vielseitige Palettenverpackungslösung, die entwickelt wurde, um Schutzecken sicher an Ort und Stelle zu halten, ohne die Hauptverpackung zu beschädigen. Es lässt sich leicht entfernen, hinterlässt keine Spuren und bewahrt die Integrität und das Aussehen von Kartons und Kisten.',
+                    stretch_bands_video_desc2: 'In mehreren Breiten und Längen erhältlich, kann das Dehnband an spezifische Verpackungsabmessungen und Palettenkonfigurationen angepasst werden. Als ergänzendes Verpackungszubehör verbessert es die Ladungsstabilität und hält Produkte während Transport und Lagerung sicher an ihrem Platz.',
+                    recyclable: '✓ 100% Recycelbar',
+                    customizable: '✓ Anpassbar',
+                    package_safe: '✓ Verpackungssicher',
+                    easy_to_apply: '✓ Einfach anzuwenden',
+                    multiple_sizes: '✓ Mehrere Größen',
+                    our_stretch_band_products: 'Unsere Dehnband-Produkte',
+                    standard_bands: 'Standard-Bänder',
+                    standard_bands_desc: 'Entwickelt für zuverlässige Ladungsstabilisierung in alltäglichen Verpackungsvorgängen. Mit einer Breite von 100 mm bieten sie konstante Haltekraft und sind gleichzeitig einfach anzubringen und zu entfernen, ideal für routinemäßige Paletten- und Kartonsicherung.',
+                    heavy_duty_bands: 'Heavy-Duty-Bänder',
+                    heavy_duty_bands_desc: 'Extra starke Bänder zum Sichern schwerer Pakete und für industrielle Anwendungen. Ideal zur Stabilisierung sperriger oder schwerer Pakete. Erhältlich in Breiten von 150 bis 200 mm.',
+                    colored_bands: 'Farbige Bänder',
+                    colored_bands_desc: 'Entwickelt für Palettenidentifikation und visuelle Markierung in Lager- und Logistikumgebungen. Auch geeignet für die Lebensmittelindustrie - sichern Sie Liner in Behältern und bieten Sie hohe Sichtbarkeit für einfache Kontaminationserkennung.',
+                    request_quote: 'Angebot anfordern'
+                },
+                about: {
+                    title: 'Über Aiventus',
+                    subtitle: 'Ihr vertrauenswürdiger Partner für Verpackungslösungen',
+                    our_story: 'Unsere Geschichte',
+                    story_text1: 'Gegründet im Jahr 2015, steht Aiventus seit fast einem Jahrzehnt an der Spitze der Verpackungsinnovation. Was als kleines Unternehmen begann, ist zu einem führenden Hersteller gewachsen, dem weltweit Tausende von Unternehmen vertrauen.',
+                    story_text2: 'Wir sind spezialisiert auf die Herstellung hochwertiger Versandtaschen und Dehnbänder, die den sich entwickelnden Anforderungen des modernen Handels entsprechen. Unser Engagement für Qualität, Nachhaltigkeit und Kundenzufriedenheit treibt alles an, was wir tun.',
+                    years_title: '10+ Jahre',
+                    years_desc: 'Herstellungsexzellenz'
+                },
+                contact: {
+                    title: 'Kontaktieren Sie uns',
+                    subtitle: 'Nehmen Sie Kontakt auf für Angebote und Anfragen',
+                    get_in_touch: 'Kontaktaufnahme',
+                    phone: 'Telefon',
+                    email: 'E-Mail',
+                    address: 'Adresse',
+                    find_us: 'Finden Sie uns',
+                    our_location: '📍 Unser Standort',
+                    get_directions: '🗺️ Wegbeschreibung',
+                    street_view: '👁️ Straßenansicht',
+                    business_hours: '🕒 Geschäftszeiten',
+                    monday_friday: 'Montag - Freitag:',
+                    monday_friday_hours: '8:00 - 18:00 Uhr',
+                    saturday: 'Samstag:',
+                    saturday_hours: '9:00 - 16:00 Uhr',
+                    sunday: 'Sonntag:',
+                    sunday_hours: 'Geschlossen',
+                    holidays: 'Feiertage:',
+                    holidays_hours: 'Geschlossen'
+                },
+                footer: {
+                    tagline: 'Führender Hersteller von Premium-Versandtaschen und Dehnbändern.\nQualität, der Sie vertrauen können.',
+                    products: 'Produkte',
+                    mailing_bags: 'Versandtaschen',
+                    stretch_bands: 'Dehnbänder',
+                    company: 'Unternehmen',
+                    about_us: 'Über uns',
+                    contact: 'Kontakt',
+                    support: 'Unterstützung',
+                    faq: 'FAQ',
+                    shipping_info: 'Versandinformationen',
+                    copyright: '© 2026 Aiventus. Alle Rechte vorbehalten.',
+                    privacy_policy: 'Datenschutzrichtlinie',
+                    terms_of_service: 'Nutzungsbedingungen',
+                    cookie_policy: 'Cookie-Richtlinie'
+                }
+            },
+            fr: {
+                nav: {
+                    home: 'Accueil',
+                    products: 'Produits',
+                    about: 'À propos',
+                    contact: 'Contact',
+                    admin: 'Admin'
+                },
+                language: {
+                    select: 'Langue'
+                },
+                home: {
+                    banner_title: 'Producteur de vos sacs postaux.',
+                    banner_description: 'Recyclable. Écologique. Emballage e-commerce plus intelligent pour votre entreprise.',
+                    banner_button: 'Explorer les produits',
+                    iso_certified: 'Certifié ISO',
+                    iso_description: 'Nos processus de production répondent à des normes internationales rigoureuses pour garantir une qualité et une fiabilité constantes.',
+                    recyclable: 'Recyclable',
+                    recyclable_description: 'Nos sacs postaux sont entièrement recyclables, aidant votre entreprise à réduire les déchets et à soutenir une économie circulaire.',
+                    custom_branding: 'Solutions de marquage personnalisées',
+                    custom_branding_description: 'Personnalisez votre emballage avec des couleurs, logos et designs personnalisés pour renforcer votre identité de marque.',
+                    special_offers_title: 'Offres spéciales disponibles',
+                    special_offers_description: 'Contactez-nous dès aujourd\'hui pour des prix en gros et des solutions personnalisées adaptées aux besoins de votre entreprise.',
+                    explore_products: 'Découvrir les Produits',
+                },
+                products: {
+                    title: 'Nos produits',
+                    subtitle: 'Choisissez parmi notre gamme complète de solutions d\'expédition',
+                    mailing_bags_title: 'Sacs postaux',
+                    mailing_bags_description: 'Sacs postaux durables et sécurisés de différentes tailles. Parfait pour le e-commerce, les documents et les besoins d\'expédition généraux.',
+                    stretch_bands_title: 'Bandes élastiques',
+                    stretch_bands_description: 'Bandes élastiques de haute qualité pour sécuriser les colis et regrouper les articles. Disponibles en plusieurs tailles.',
+                    view_products: 'Voir les produits',
+                    back_to_products: 'Retour aux produits',
+                    mailing_bags_page_title: 'Sacs postaux',
+                    mailing_bags_page_subtitle: 'Solutions postales professionnelles pour tous les besoins',
+                    mailing_bags_video_title: 'Sacs d’expédition',
+                    mailing_bags_video_desc1: 'Nos sacs d’expédition écologiques sont spécialement conçus pour l’envoi de marchandises dans les secteurs du e-commerce, du commerce de détail et de la logistique. Fabriqués à partir de film LDPE recyclé, ils offrent une solution d’expédition durable, résistante à l’eau et fiable.',
+                    mailing_bags_video_desc2: 'Disponibles en différentes tailles, épaisseurs et options d’impression, les sacs peuvent être adaptés aux besoins spécifiques des entreprises. Des configurations avec une ou deux bandes adhésives avec perforation garantissent une fermeture sécurisée et des options de retour pratiques, tandis que des poignées sont disponibles sur demande.',
+                    standard_mailing_bags: 'Sacs postaux standard',
+                    standard_mailing_bags_desc: '• Disponibles en 13 tailles<br>• Avec une bande de scellage<br>• Quantité minimale de commande d\'une boîte par taille',
+                    customized_mailing_bags: 'Sacs postaux personnalisés',
+                    customized_mailing_bags_desc: '• Emballage retournable - 2 bandes de scellage et perforation<br>• Option de poignée de transport - idéale pour la commodité du client<br>• Tailles personnalisées<br>• Options d\'impression de logo et de marque personnalisées',
+                    stretch_bands_page_title: 'Bandes élastiques',
+                    stretch_bands_page_subtitle: 'Solutions élastiques fiables pour un emballage sécurisé',
+                    stretch_bands_video_title: 'Bandes élastiques',
+                    stretch_bands_video_desc1: 'La bande élastique est une solution d\'emballage de palette polyvalente conçue pour maintenir fermement les coins de protection en place sans endommager l\'emballage principal. Elle se retire facilement, ne laisse aucune trace et préserve l\'intégrité et l\'apparence des cartons et des boîtes.',
+                    stretch_bands_video_desc2: 'Disponibles en plusieurs largeurs et longueurs, les bandes élastiques peuvent être adaptées aux dimensions d\'emballage spécifiques et aux configurations de palettes. En tant qu\'accessoire d\'emballage complémentaire, elle améliore la stabilité de la charge et maintient les produits en position sécurisée pendant le transport et le stockage.',
+                    recyclable: '✓ 100 % Recyclable',
+                    customizable: '✓ Personnalisable',
+                    package_safe: '✓ Sans danger pour l\'emballage',
+                    easy_to_apply: '✓ Facile à appliquer',
+                    multiple_sizes: '✓ Plusieurs tailles',
+                    our_stretch_band_products: 'Nos produits de bandes élastiques',
+                    standard_bands: 'Bandes standard',
+                    standard_bands_desc: 'Conçues pour une stabilisation de charge fiable dans les opérations d\'emballage quotidiennes. Avec une largeur de 100 mm, elles offrent une force de maintien constante tout en restant faciles à appliquer et à retirer, idéales pour la sécurisation routinière des palettes et des cartons.',
+                    heavy_duty_bands: 'Bandes résistantes',
+                    heavy_duty_bands_desc: 'Bandes extra résistantes pour sécuriser les colis lourds et les applications industrielles. Idéales pour stabiliser les colis volumineux ou lourds. Disponibles en largeurs de 150 à 200 mm.',
+                    colored_bands: 'Bandes colorées',
+                    colored_bands_desc: 'Conçues pour l\'identification des palettes et le marquage visuel dans les environnements de stockage et de logistique. Également adaptées à l\'industrie alimentaire - sécurisez les doublures dans les conteneurs tout en offrant une haute visibilité pour une détection facile de la contamination.',
+                    request_quote: 'Demander un devis'
+                },
+                about: {
+                    title: 'À propos d\'Aiventus',
+                    subtitle: 'Votre partenaire de confiance en solutions d\'emballage',
+                    our_story: 'Notre histoire',
+                    story_text1: 'Fondée en 2015, Aiventus est à l\'avant-garde de l\'innovation en matière d\'emballage depuis près d\'une décennie. Ce qui a commencé comme une petite entreprise est devenu un fabricant de premier plan auquel des milliers d\'entreprises dans le monde font confiance.',
+                    story_text2: 'Nous sommes spécialisés dans la création de sacs postaux et de bandes élastiques de haute qualité qui répondent aux besoins évolutifs du commerce moderne. Notre engagement envers la qualité, la durabilité et la satisfaction client guide tout ce que nous faisons.',
+                    years_title: '10+ ans',
+                    years_desc: 'd\'excellence en fabrication'
+                },
+                contact: {
+                    title: 'Contactez-nous',
+                    subtitle: 'Contactez-nous pour des devis et des demandes',
+                    get_in_touch: 'Prendre contact',
+                    phone: 'Téléphone',
+                    email: 'E-mail',
+                    address: 'Adresse',
+                    find_us: 'Nous trouver',
+                    our_location: '📍 Notre emplacement',
+                    get_directions: '🗺️ Itinéraire',
+                    street_view: '👁️ Vue de la rue',
+                    business_hours: '🕒 Heures d\'ouverture',
+                    monday_friday: 'Lundi - Vendredi :',
+                    monday_friday_hours: '8h00 - 18h00',
+                    saturday: 'Samedi :',
+                    saturday_hours: '9h00 - 16h00',
+                    sunday: 'Dimanche :',
+                    sunday_hours: 'Fermé',
+                    holidays: 'Jours fériés :',
+                    holidays_hours: 'Fermé'
+                },
+                footer: {
+                    tagline: 'Principal fabricant de sacs postaux et de bandes élastiques premium.\nQualité en laquelle vous pouvez avoir confiance.',
+                    products: 'Produits',
+                    mailing_bags: 'Sacs postaux',
+                    stretch_bands: 'Bandes élastiques',
+                    company: 'Société',
+                    about_us: 'À propos',
+                    contact: 'Contact',
+                    support: 'Support',
+                    faq: 'FAQ',
+                    shipping_info: 'Informations d\'expédition',
+                    copyright: '© 2026 Aiventus. Tous droits réservés.',
+                    privacy_policy: 'Politique de confidentialité',
+                    terms_of_service: 'Conditions d\'utilisation',
+                    cookie_policy: 'Politique des cookies'
+                }
+            },
+            pl: {
+                nav: {
+                    home: 'Strona główna',
+                    products: 'Produkty',
+                    about: 'O nas',
+                    contact: 'Kontakt',
+                    admin: 'Admin'
+                },
+                language: {
+                    select: 'Język'
+                },
+                home: {
+                    banner_title: 'Producent Twoich toreb pocztowych.',
+                    banner_description: 'Podlegające recyklingowi. Przyjazne dla środowiska. Mądrzejsze opakowania e-commerce dla Twojej firmy.',
+                    banner_button: 'Przeglądaj produkty',
+                    iso_certified: 'Certyfikat ISO',
+                    iso_description: 'Nasze procesy produkcyjne spełniają rygorystyczne międzynarodowe standardy, aby zapewnić stałą jakość i niezawodność.',
+                    recyclable: 'Podlegające recyklingowi',
+                    recyclable_description: 'Nasze torby pocztowe można w pełni poddać recyklingowi, co pomaga Twojej firmie zmniejszyć ilość odpadów i wspierać gospodarkę o obiegu zamkniętym.',
+                    custom_branding: 'Niestandardowe rozwiązania brandingowe',
+                    custom_branding_description: 'Personalizuj swoje opakowanie za pomocą niestandardowych kolorów, logo i projektów, aby wzmocnić tożsamość marki.',
+                    special_offers_title: 'Dostępne oferty specjalne',
+                    special_offers_description: 'Skontaktuj się z nami już dziś, aby uzyskać ceny hurtowe i niestandardowe rozwiązania dostosowane do potrzeb Twojej firmy.',
+                    explore_products: 'Przeglądaj Produkty',
+                },
+                products: {
+                    title: 'Nasze produkty',
+                    subtitle: 'Wybierz z naszej kompleksowej gamy rozwiązań pocztowych',
+                    mailing_bags_title: 'Torby pocztowe',
+                    mailing_bags_description: 'Trwałe i bezpieczne torby pocztowe w różnych rozmiarach. Idealne do e-commerce, dokumentów i ogólnych potrzeb wysyłkowych.',
+                    stretch_bands_title: 'Taśmy rozciągliwe',
+                    stretch_bands_description: 'Wysokiej jakości elastyczne taśmy do zabezpieczania paczek i wiązania przedmiotów. Dostępne w wielu rozmiarach.',
+                    view_products: 'Zobacz produkty',
+                    back_to_products: 'Powrót do produktów',
+                    mailing_bags_page_title: 'Torby pocztowe',
+                    mailing_bags_page_subtitle: 'Profesjonalne rozwiązania pocztowe na każdą potrzebę',
+                    mailing_bags_video_title: 'Torby pocztowe',
+                    mailing_bags_video_desc1: 'Nasze ekologiczne torby pocztowe zostały zaprojektowane specjalnie do wysyłki towarów w e-commerce, handlu detalicznym oraz logistyce. Wykonane z recyklingowanej folii LDPE, zapewniają trwałe, wodoodporne i niezawodne rozwiązanie wysyłkowe.',
+                    mailing_bags_video_desc2: 'Dostępne w różnych rozmiarach, grubościach i opcjach nadruku, torby mogą być dostosowane do indywidualnych potrzeb biznesowych. Konfiguracje z jedną lub dwiema taśmami uszczelniającymi z perforacją zapewniają bezpieczne zamknięcie i wygodne opcje zwrotu, a opcjonalne uchwyty są dostępne na życzenie.', 
+                    stretch_bands_page_title: 'Taśmy rozciągliwe',
+                    stretch_bands_page_subtitle: 'Niezawodne elastyczne rozwiązania dla bezpiecznego pakowania',
+                    standard_mailing_bags: 'Standardowe torby pocztowe',
+                    standard_mailing_bags_desc: '• Dostępne w 13 rozmiarach<br>• Z jedną taśmą uszczelniającą<br>• Minimalna ilość zamówienia jednego pudełka na rozmiar',
+                    customized_mailing_bags: 'Niestandardowe torby pocztowe',
+                    customized_mailing_bags_desc: '• Opakowanie zwrotne - 2 taśmy uszczelniające i perforacja<br>• Opcja uchwytu do noszenia - doskonała dla wygody klienta<br>• Niestandardowe rozmiary<br>• Opcje druku niestandardowego logo i brandingu',
+                    stretch_bands_video_title: 'Taśmy rozciągliwe',
+                    stretch_bands_video_desc1: 'Taśma rozciągliwa to wszechstronne rozwiązanie do pakowania palet, zaprojektowane w celu bezpiecznego utrzymywania narożników ochronnych na miejscu bez uszkadzania głównego opakowania. Łatwo się usuwa, nie pozostawia śladów i zachowuje integralność oraz wygląd kartonów i pudełek.',
+                    stretch_bands_video_desc2: 'Dostępne w wielu szerokościach i długościach, taśmy rozciągliwe mogą być dostosowane do określonych wymiarów opakowań i konfiguracji palet. Jako uzupełniające akcesoria pakowe, zwiększają stabilność ładunku i utrzymują produkty bezpiecznie na miejscu podczas transportu i przechowywania.',
+                    recyclable: '✓ 100% Recyklingowe',
+                    customizable: '✓ Personalizowane',
+                    package_safe: '✓ Bezpieczne dla opakowania',
+                    easy_to_apply: '✓ Łatwe w aplikacji',
+                    multiple_sizes: '✓ Wiele rozmiarów',
+                    our_stretch_band_products: 'Nasze produkty taśm rozciągliwych',
+                    standard_bands: 'Taśmy standardowe',
+                    standard_bands_desc: 'Zaprojektowane do niezawodnej stabilizacji ładunku w codziennych operacjach pakowania. O szerokości 100 mm, zapewniają stałą siłę mocowania, pozostając jednocześnie łatwe w aplikacji i usuwaniu, idealne do rutynowego zabezpieczania palet i kartonów.',
+                    heavy_duty_bands: 'Taśmy wzmocnione',
+                    heavy_duty_bands_desc: 'Ekstra mocne taśmy do zabezpieczania ciężkich paczek i zastosowań przemysłowych. Idealne do stabilizacji dużych lub ciężkich paczek. Dostępne w szerokościach od 150 do 200 mm.',
+                    colored_bands: 'Taśmy kolorowe',
+                    colored_bands_desc: 'Zaprojektowane do identyfikacji palet i wizualnego oznaczania w środowiskach magazynowych i logistycznych. Również odpowiednie do przemysłu spożywczego - zabezpieczają wkładki w pojemnikach, zapewniając wysoką widoczność dla łatwego wykrywania zanieczyszczeń.',
+                    request_quote: 'Poproś o wycenę'
+                },
+                about: {
+                    title: 'O Aiventus',
+                    subtitle: 'Twój zaufany partner w rozwiązaniach pakowych',
+                    our_story: 'Nasza historia',
+                    story_text1: 'Założona w 2015 roku, Aiventus od prawie dekady jest na czele innowacji w dziedzinie opakowań. To, co zaczęło się jako mała firma, przekształciło się w wiodącego producenta, któremu ufają tysiące firm na całym świecie.',
+                    story_text2: 'Specjalizujemy się w tworzeniu wysokiej jakości toreb pocztowych i taśm rozciągliwych, które odpowiadają zmieniającym się potrzebom nowoczesnego handlu. Nasze zaangażowanie w jakość, zrównoważony rozwój i zadowolenie klienta napędza wszystko, co robimy.',
+                    years_title: '10+ lat',
+                    years_desc: 'doskonałości produkcyjnej'
+                },
+                contact: {
+                    title: 'Skontaktuj się z nami',
+                    subtitle: 'Skontaktuj się w sprawie wycen i zapytań',
+                    get_in_touch: 'Skontaktuj się',
+                    phone: 'Telefon',
+                    email: 'E-mail',
+                    address: 'Adres',
+                    find_us: 'Znajdź nas',
+                    our_location: '📍 Nasza lokalizacja',
+                    get_directions: '🗺️ Wskazówki dojazdu',
+                    street_view: '👁️ Widok ulicy',
+                    business_hours: '🕒 Godziny otwarcia',
+                    monday_friday: 'Poniedziałek - Piątek:',
+                    monday_friday_hours: '8:00 - 18:00',
+                    saturday: 'Sobota:',
+                    saturday_hours: '9:00 - 16:00',
+                    sunday: 'Niedziela:',
+                    sunday_hours: 'Zamknięte',
+                    holidays: 'Święta:',
+                    holidays_hours: 'Zamknięte'
+                },
+                footer: {
+                    tagline: 'Wiodący producent premium toreb pocztowych i taśm rozciągliwych.\nJakość, na której możesz polegać.',
+                    products: 'Produkty',
+                    mailing_bags: 'Torby pocztowe',
+                    stretch_bands: 'Taśmy rozciągliwe',
+                    company: 'Firma',
+                    about_us: 'O nas',
+                    contact: 'Kontakt',
+                    support: 'Wsparcie',
+                    faq: 'FAQ',
+                    shipping_info: 'Informacje o wysyłce',
+                    copyright: '© 2026 Aiventus. Wszelkie prawa zastrzeżone.',
+                    privacy_policy: 'Polityka prywatności',
+                    terms_of_service: 'Warunki korzystania',
+                    cookie_policy: 'Polityka plików cookie'
+                }
+            },
+            es: {
+                nav: {
+                    home: 'Inicio',
+                    products: 'Productos',
+                    about: 'Acerca de',
+                    contact: 'Contacto',
+                    admin: 'Admin'
+                },
+                language: {
+                    select: 'Idioma'
+                },
+                home: {
+                    banner_title: 'Productor de sus bolsas de correo.',
+                    banner_description: 'Reciclable. Ecológico. Embalaje de comercio electrónico más inteligente para su negocio.',
+                    banner_button: 'Explorar productos',
+                    iso_certified: 'Certificado ISO',
+                    iso_description: 'Nuestros procesos de producción cumplen con rigurosos estándares internacionales para garantizar calidad y fiabilidad constantes.',
+                    recyclable: 'Reciclable',
+                    recyclable_description: 'Nuestras bolsas de correo son completamente reciclables, ayudando a su empresa a reducir residuos y apoyar una economía circular.',
+                    custom_branding: 'Soluciones de marca personalizadas',
+                    custom_branding_description: 'Personalice su embalaje con colores, logotipos y diseños personalizados para fortalecer su identidad de marca.',
+                    special_offers_title: 'Ofertas especiales disponibles',
+                    special_offers_description: 'Contáctenos hoy para obtener precios al por mayor y soluciones personalizadas adaptadas a las necesidades de su negocio.',
+                    explore_products: 'Explorar Productos',
+                },
+                products: {
+                    title: 'Nuestros productos',
+                    subtitle: 'Elija de nuestra gama completa de soluciones de envío',
+                    mailing_bags_title: 'Bolsas de correo',
+                    mailing_bags_description: 'Bolsas de correo duraderas y seguras en varios tamaños. Perfectas para comercio electrónico, documentos y necesidades generales de envío.',
+                    stretch_bands_title: 'Bandas elásticas',
+                    stretch_bands_description: 'Bandas elásticas de alta calidad para asegurar paquetes y agrupar artículos. Disponibles en múltiples tamaños.',
+                    view_products: 'Ver productos',
+                    back_to_products: 'Volver a productos',
+                    mailing_bags_page_title: 'Bolsas de correo',
+                    mailing_bags_page_subtitle: 'Soluciones postales profesionales para cada necesidad',
+                    mailing_bags_video_title: 'Bolsas de envío',
+                    mailing_bags_video_desc1: 'Nuestras bolsas de envío ecológicas están diseñadas específicamente para el transporte de productos en operaciones de comercio electrónico, venta minorista y logística. Fabricadas con film LDPE reciclado, ofrecen una solución de envío duradera, resistente al agua y fiable.',
+                    mailing_bags_video_desc2: 'Disponibles en varios tamaños, grosores y opciones de impresión, las bolsas pueden adaptarse a las necesidades específicas de cada negocio. Las configuraciones con una o dos tiras adhesivas con perforación garantizan un cierre seguro y opciones de devolución convenientes, mientras que las asas opcionales están disponibles bajo solicitud.',
+                    standard_mailing_bags: 'Bolsas de correo estándar',
+                    standard_mailing_bags_desc: '• Disponibles en 13 tamaños<br>• Con una tira de sellado<br>• Cantidad mínima de pedido de una caja por tamaño',
+                    customized_mailing_bags: 'Bolsas de correo personalizadas',
+                    customized_mailing_bags_desc: '• Embalaje retornable - 2 tiras de sellado y perforación<br>• Opción de asa de transporte - excelente para la comodidad del cliente<br>• Tamaños personalizados<br>• Opciones de impresión de logo y marca personalizadas',
+                    stretch_bands_page_title: 'Bandas elásticas',
+                    stretch_bands_page_subtitle: 'Soluciones elásticas confiables para embalaje seguro',
+                    stretch_bands_video_title: 'Bandas elásticas',
+                    stretch_bands_video_desc1: 'La banda elástica es una solución de embalaje de palets versátil diseñada para mantener las esquinas de protección firmemente en su lugar sin dañar el embalaje principal. Se retira fácilmente, no deja marcas y preserva la integridad y apariencia de las cajas y cartones.',
+                    stretch_bands_video_desc2: 'Disponibles en múltiples anchuras y longitudes, las bandas elásticas se pueden adaptar a dimensiones de embalaje específicas y configuraciones de palets. Como accesorio de embalaje complementario, mejora la estabilidad de la carga y mantiene los productos en posición segura durante el transporte y almacenamiento.',
+                    recyclable: '✓ 100% Reciclable',
+                    customizable: '✓ Personalizable',
+                    package_safe: '✓ Seguro para el paquete',
+                    easy_to_apply: '✓ Fácil de aplicar',
+                    multiple_sizes: '✓ Varios tamaños',
+                    our_stretch_band_products: 'Nuestros productos de bandas elásticas',
+                    standard_bands: 'Bandas estándar',
+                    standard_bands_desc: 'Diseñadas para estabilización de carga confiable en operaciones de embalaje diarias. Con un ancho de 100 mm, proporcionan fuerza de sujeción constante mientras permanecen fáciles de aplicar y quitar, ideales para asegurar palets y cartones de forma rutinaria.',
+                    heavy_duty_bands: 'Bandas resistentes',
+                    heavy_duty_bands_desc: 'Bandas extra fuertes para asegurar paquetes pesados y aplicaciones industriales. Ideales para estabilizar paquetes voluminosos o pesados. Disponibles en anchos de 150 a 200 mm.',
+                    colored_bands: 'Bandas de colores',
+                    colored_bands_desc: 'Diseñadas para identificación de palets y marcado visual en entornos de almacenamiento y logística. También adecuadas para la industria alimentaria: aseguran revestimientos en contenedores proporcionando alta visibilidad para detección fácil de contaminación.',
+                    request_quote: 'Solicitar cotización'
+                },
+                about: {
+                    title: 'Acerca de Aiventus',
+                    subtitle: 'Su socio de confianza en soluciones de embalaje',
+                    our_story: 'Nuestra historia',
+                    story_text1: 'Fundada en 2015, Aiventus ha estado a la vanguardia de la innovación en embalaje durante casi una década. Lo que comenzó como una pequeña empresa se ha convertido en un fabricante líder en el que confían empresas de todo el mundo.',
+                    story_text2: 'Nos especializamos en crear bolsas de correo y bandas elásticas de alta calidad que satisfacen las necesidades cambiantes del comercio moderno. Nuestro compromiso con la calidad, sostenibilidad y satisfacción del cliente impulsa todo lo que hacemos.',
+                    years_title: '10+ años',
+                    years_desc: 'de excelencia en fabricación'
+                },
+                contact: {
+                    title: 'Contáctenos',
+                    subtitle: 'Póngase en contacto para cotizaciones y consultas',
+                    get_in_touch: 'Ponerse en contacto',
+                    phone: 'Teléfono',
+                    email: 'Correo electrónico',
+                    address: 'Dirección',
+                    find_us: 'Encuéntrenos',
+                    our_location: '📍 Nuestra ubicación',
+                    get_directions: '🗺️ Obtener direcciones',
+                    street_view: '👁️ Vista de calle',
+                    business_hours: '🕒 Horario comercial',
+                    monday_friday: 'Lunes - Viernes:',
+                    monday_friday_hours: '8:00 - 18:00',
+                    saturday: 'Sábado:',
+                    saturday_hours: '9:00 - 16:00',
+                    sunday: 'Domingo:',
+                    sunday_hours: 'Cerrado',
+                    holidays: 'Días festivos:',
+                    holidays_hours: 'Cerrado'
+                },
+                footer: {
+                    tagline: 'Fabricante líder de bolsas de correo premium y bandas elásticas.\nCalidad en la que puede confiar.',
+                    products: 'Productos',
+                    mailing_bags: 'Bolsas de correo',
+                    stretch_bands: 'Bandas elásticas',
+                    company: 'Empresa',
+                    about_us: 'Acerca de',
+                    contact: 'Contacto',
+                    support: 'Soporte',
+                    faq: 'FAQ',
+                    shipping_info: 'Información de envío',
+                    copyright: '© 2026 Aiventus. Todos los derechos reservados.',
+                    privacy_policy: 'Política de privacidad',
+                    terms_of_service: 'Términos de servicio',
+                    cookie_policy: 'Política de cookies'
+                }
+            }
+        };
+        
+        function changeLanguage(lang) {
+            currentLanguage = lang;
+            
+            // Update flag and code
+            const flags = { en: '🇬🇧', de: '🇩🇪', fr: '🇫🇷', pl: '🇵🇱', es: '🇪🇸' };
+            const codes = { en: 'EN', de: 'DE', fr: 'FR', pl: 'PL', es: 'ES' };
+            
+            // Update desktop language selector
+            document.getElementById('current-language-flag').textContent = flags[lang];
+            document.getElementById('current-language-code').textContent = codes[lang];
+            
+            // Update mobile language selector
+            document.getElementById('mobile-current-language-flag').textContent = flags[lang];
+            document.getElementById('mobile-current-language-code').textContent = codes[lang];
+            
+            // Close dropdowns
+            document.getElementById('language-dropdown').classList.add('hidden');
+            document.getElementById('mobile-language-dropdown').classList.add('hidden');
+            
+            // Update product names and descriptions in the products array
+            products[0].name = translations[currentLanguage].products.standard_mailing_bags;
+            products[0].description = translations[currentLanguage].products.standard_mailing_bags_desc;
+            products[1].name = translations[currentLanguage].products.customized_mailing_bags;
+            products[1].description = translations[currentLanguage].products.customized_mailing_bags_desc;
+            
+            // Update all translated elements
+            updateTranslations();
+            
+            // Refresh the mailing bags page with new translations
+            updateMailingBagsPage();
+            
+            // Save preference
+            localStorage.setItem('preferredLanguage', lang);
+        }
+        
+        function updateTranslations() {
+            const lang = translations[currentLanguage];
+            
+            // Update all elements with data-i18n attribute
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                const keys = key.split('.');
+                let value = lang;
+                
+                for (const k of keys) {
+                    value = value[k];
+                    if (!value) break;
+                }
+                
+                if (value) {
+                    element.textContent = value;
+                }
+            });
+            
+            // Update specific content elements
+            updateHomePageTranslations();
+            updateProductsPageTranslations();
+            updateAboutPageTranslations();
+            updateContactPageTranslations();
+            updateFooterTranslations();
+        }
+        
+        function updateHomePageTranslations() {
+            const lang = translations[currentLanguage].home;
+
+            const exploreBtn = document.getElementById('explore-products-btn');
+            if (exploreBtn) exploreBtn.textContent = lang.explore_products;
+
+            
+            const bannerTitle = document.getElementById('banner-title');
+            if (bannerTitle) bannerTitle.textContent = lang.banner_title;
+            
+            const bannerDesc = document.getElementById('banner-description');
+            if (bannerDesc) bannerDesc.textContent = lang.banner_description;
+            
+            const specialOffersTitle = document.getElementById('home-banner-title');
+            if (specialOffersTitle) specialOffersTitle.textContent = lang.special_offers_title;
+            
+            const specialOffersDesc = document.getElementById('home-banner-description');
+            if (specialOffersDesc) specialOffersDesc.textContent = lang.special_offers_description;
+            
+            // Features section
+            const isoTitle = document.getElementById('feature-iso-title');
+            if (isoTitle) isoTitle.textContent = lang.iso_certified;
+            
+            const isoDesc = document.getElementById('feature-iso-desc');
+            if (isoDesc) isoDesc.textContent = lang.iso_description;
+            
+            const recyclableTitle = document.getElementById('feature-recyclable-title');
+            if (recyclableTitle) recyclableTitle.textContent = lang.recyclable;
+            
+            const recyclableDesc = document.getElementById('feature-recyclable-desc');
+            if (recyclableDesc) recyclableDesc.textContent = lang.recyclable_description;
+            
+            const brandingTitle = document.getElementById('feature-branding-title');
+            if (brandingTitle) brandingTitle.textContent = lang.custom_branding;
+            
+            const brandingDesc = document.getElementById('feature-branding-desc');
+            if (brandingDesc) brandingDesc.textContent = lang.custom_branding_description;
+        }
+        
+        function updateProductsPageTranslations() {
+            const lang = translations[currentLanguage].products;
+            
+            // Products page
+            const productsTitle = document.getElementById('products-title');
+            if (productsTitle) productsTitle.textContent = lang.title;
+            
+            const productsSubtitle = document.getElementById('products-subtitle');
+            if (productsSubtitle) productsSubtitle.textContent = lang.subtitle;
+            
+            const mailingBagsTitle = document.getElementById('products-mailing-bags-title');
+            if (mailingBagsTitle) mailingBagsTitle.textContent = lang.mailing_bags_title;
+            
+            const mailingBagsDesc = document.getElementById('products-mailing-bags-desc');
+            if (mailingBagsDesc) mailingBagsDesc.textContent = lang.mailing_bags_description;
+            
+            const stretchBandsTitle = document.getElementById('products-stretch-bands-title');
+            if (stretchBandsTitle) stretchBandsTitle.textContent = lang.stretch_bands_title;
+            
+            const stretchBandsDesc = document.getElementById('products-stretch-bands-desc');
+            if (stretchBandsDesc) stretchBandsDesc.textContent = lang.stretch_bands_description;
+            
+            const viewLink1 = document.getElementById('products-view-link-1');
+            if (viewLink1) viewLink1.textContent = lang.view_products;
+            
+            const viewLink2 = document.getElementById('products-view-link-2');
+            if (viewLink2) viewLink2.textContent = lang.view_products;
+            
+            // Mailing Bags page
+            const mailingBagsPageTitle = document.getElementById('mailing-bags-title');
+            if (mailingBagsPageTitle) mailingBagsPageTitle.textContent = lang.mailing_bags_page_title;
+            
+            const mailingBagsPageSubtitle = document.getElementById('mailing-bags-subtitle');
+            if (mailingBagsPageSubtitle) mailingBagsPageSubtitle.textContent = lang.mailing_bags_page_subtitle;
+            
+            const mailingBagsBackBtn = document.getElementById('mailing-bags-back-btn');
+            if (mailingBagsBackBtn) mailingBagsBackBtn.textContent = lang.back_to_products;
+
+            // Mailing Bags video block translations
+            const mailingBagsVideoTitle = document.getElementById('mailing-bags-video-title');
+            if (mailingBagsVideoTitle) mailingBagsVideoTitle.textContent = lang.mailing_bags_video_title;
+
+            const mailingBagsVideoDesc1 = document.getElementById('mailing-bags-video-desc1');
+            if (mailingBagsVideoDesc1) mailingBagsVideoDesc1.textContent = lang.mailing_bags_video_desc1;
+
+            const mailingBagsVideoDesc2 = document.getElementById('mailing-bags-video-desc2');
+            if (mailingBagsVideoDesc2) mailingBagsVideoDesc2.textContent = lang.mailing_bags_video_desc2;
+            
+            const mbFeature1 = document.getElementById('mailing-bags-feature-1');
+            if (mbFeature1) mbFeature1.textContent = lang.recyclable;
+            
+            const mbFeature2 = document.getElementById('mailing-bags-feature-2');
+            if (mbFeature2) mbFeature2.textContent = lang.customizable;
+            
+            const mbFeature3 = document.getElementById('mailing-bags-feature-3');
+            if (mbFeature3) mbFeature3.textContent = lang.multiple_sizes;
+            
+            // Stretch Bands page
+            const stretchBandsPageTitle = document.getElementById('stretch-bands-title');
+            if (stretchBandsPageTitle) stretchBandsPageTitle.textContent = lang.stretch_bands_page_title;
+            
+            const stretchBandsPageSubtitle = document.getElementById('stretch-bands-subtitle');
+            if (stretchBandsPageSubtitle) stretchBandsPageSubtitle.textContent = lang.stretch_bands_page_subtitle;
+            
+            const stretchBandsBackBtn = document.getElementById('stretch-bands-back-btn');
+            if (stretchBandsBackBtn) stretchBandsBackBtn.textContent = lang.back_to_products;
+            
+            const stretchBandsVideoTitle = document.getElementById('stretch-bands-video-title');
+            if (stretchBandsVideoTitle) stretchBandsVideoTitle.textContent = lang.stretch_bands_video_title;
+            
+            const stretchBandsVideoDesc1 = document.getElementById('stretch-bands-video-desc1');
+            if (stretchBandsVideoDesc1) stretchBandsVideoDesc1.textContent = lang.stretch_bands_video_desc1;
+            
+            const stretchBandsVideoDesc2 = document.getElementById('stretch-bands-video-desc2');
+            if (stretchBandsVideoDesc2) stretchBandsVideoDesc2.textContent = lang.stretch_bands_video_desc2;
+            
+            const feature1 = document.getElementById('stretch-bands-feature-1');
+            if (feature1) feature1.textContent = lang.package_safe;
+            
+            const feature2 = document.getElementById('stretch-bands-feature-2');
+            if (feature2) feature2.textContent = lang.easy_to_apply;
+            
+            const feature3 = document.getElementById('stretch-bands-feature-3');
+            if (feature3) feature3.textContent = lang.multiple_sizes;
+            
+            const productsHeading = document.getElementById('stretch-bands-products-heading');
+            if (productsHeading) productsHeading.textContent = lang.our_stretch_band_products;
+            
+            const standardTitle = document.getElementById('stretch-bands-standard-title');
+            if (standardTitle) standardTitle.textContent = lang.standard_bands;
+            
+            const standardDesc = document.getElementById('stretch-bands-standard-desc');
+            if (standardDesc) standardDesc.textContent = lang.standard_bands_desc;
+            
+            const heavyTitle = document.getElementById('stretch-bands-heavy-title');
+            if (heavyTitle) heavyTitle.textContent = lang.heavy_duty_bands;
+            
+            const heavyDesc = document.getElementById('stretch-bands-heavy-desc');
+            if (heavyDesc) heavyDesc.textContent = lang.heavy_duty_bands_desc;
+            
+            const coloredTitle = document.getElementById('stretch-bands-colored-title');
+            if (coloredTitle) coloredTitle.textContent = lang.colored_bands;
+            
+            const coloredDesc = document.getElementById('stretch-bands-colored-desc');
+            if (coloredDesc) coloredDesc.textContent = lang.colored_bands_desc;
+            
+            const quoteBtn1 = document.getElementById('stretch-bands-quote-btn-1');
+            if (quoteBtn1) quoteBtn1.textContent = lang.request_quote;
+            
+            const quoteBtn2 = document.getElementById('stretch-bands-quote-btn-2');
+            if (quoteBtn2) quoteBtn2.textContent = lang.request_quote;
+            
+            const quoteBtn3 = document.getElementById('stretch-bands-quote-btn-3');
+            if (quoteBtn3) quoteBtn3.textContent = lang.request_quote;
+        }
+        
+        function updateAboutPageTranslations() {
+            const lang = translations[currentLanguage].about;
+            
+            const aboutTitle = document.getElementById('about-title');
+            if (aboutTitle) aboutTitle.textContent = lang.title;
+            
+            const aboutSubtitle = document.getElementById('about-subtitle');
+            if (aboutSubtitle) aboutSubtitle.textContent = lang.subtitle;
+            
+            const ourStoryTitle = document.getElementById('about-our-story-title');
+            if (ourStoryTitle) ourStoryTitle.textContent = lang.our_story;
+            
+            const storyText1 = document.getElementById('about-story-text1');
+            if (storyText1) storyText1.textContent = lang.story_text1;
+            
+            const storyText2 = document.getElementById('about-story-text2');
+            if (storyText2) storyText2.textContent = lang.story_text2;
+            
+            const yearsTitle = document.getElementById('about-years-title');
+            if (yearsTitle) yearsTitle.textContent = lang.years_title;
+            
+            const yearsDesc = document.getElementById('about-years-desc');
+            if (yearsDesc) yearsDesc.textContent = lang.years_desc;
+        }
+        
+        function updateContactPageTranslations() {
+            const lang = translations[currentLanguage].contact;
+            
+            const contactTitle = document.getElementById('contact-title');
+            if (contactTitle) contactTitle.textContent = lang.title;
+            
+            const contactSubtitle = document.getElementById('contact-subtitle');
+            if (contactSubtitle) contactSubtitle.textContent = lang.subtitle;
+            
+            const getInTouch = document.getElementById('contact-get-in-touch');
+            if (getInTouch) getInTouch.textContent = lang.get_in_touch;
+            
+            const phoneLabel = document.getElementById('contact-phone-label');
+            if (phoneLabel) phoneLabel.textContent = lang.phone;
+            
+            const emailLabel = document.getElementById('contact-email-label');
+            if (emailLabel) emailLabel.textContent = lang.email;
+            
+            const addressLabel = document.getElementById('contact-address-label');
+            if (addressLabel) addressLabel.textContent = lang.address;
+            
+            const findUs = document.getElementById('contact-find-us');
+            if (findUs) findUs.textContent = lang.find_us;
+            
+            const ourLocation = document.getElementById('contact-our-location');
+            if (ourLocation) ourLocation.textContent = lang.our_location;
+            
+            const directionsBtn = document.getElementById('contact-directions-btn');
+            if (directionsBtn) directionsBtn.textContent = lang.get_directions;
+            
+            const streetViewBtn = document.getElementById('contact-street-view-btn');
+            if (streetViewBtn) streetViewBtn.textContent = lang.street_view;
+            
+            const businessHours = document.getElementById('contact-business-hours');
+            if (businessHours) businessHours.textContent = lang.business_hours;
+            
+            const mondayFriday = document.getElementById('contact-monday-friday');
+            if (mondayFriday) mondayFriday.textContent = lang.monday_friday;
+            
+            const mondayFridayHours = document.getElementById('contact-monday-friday-hours');
+            if (mondayFridayHours) mondayFridayHours.textContent = lang.monday_friday_hours;
+            
+            const saturday = document.getElementById('contact-saturday');
+            if (saturday) saturday.textContent = lang.saturday;
+            
+            const saturdayHours = document.getElementById('contact-saturday-hours');
+            if (saturdayHours) saturdayHours.textContent = lang.saturday_hours;
+            
+            const sunday = document.getElementById('contact-sunday');
+            if (sunday) sunday.textContent = lang.sunday;
+            
+            const sundayHours = document.getElementById('contact-sunday-hours');
+            if (sundayHours) sundayHours.textContent = lang.sunday_hours;
+            
+            const holidays = document.getElementById('contact-holidays');
+            if (holidays) holidays.textContent = lang.holidays;
+            
+            const holidaysHours = document.getElementById('contact-holidays-hours');
+            if (holidaysHours) holidaysHours.textContent = lang.holidays_hours;
+        }
+        
+        function updateFooterTranslations() {
+            const lang = translations[currentLanguage].footer;
+            
+            const tagline = document.getElementById('footer-tagline');
+            if (tagline) {
+                // Replace \n with <br> tags for line breaks
+                const lines = lang.tagline.split('\n');
+                tagline.innerHTML = lines.join('<br>');
+            }
+            
+            const productsTitle = document.getElementById('footer-products-title');
+            if (productsTitle) productsTitle.textContent = lang.products;
+            
+            const mailingBags = document.getElementById('footer-mailing-bags');
+            if (mailingBags) mailingBags.textContent = lang.mailing_bags;
+            
+            const stretchBands = document.getElementById('footer-stretch-bands');
+            if (stretchBands) stretchBands.textContent = lang.stretch_bands;
+            
+            const companyTitle = document.getElementById('footer-company-title');
+            if (companyTitle) companyTitle.textContent = lang.company;
+            
+            const aboutUs = document.getElementById('footer-about-us');
+            if (aboutUs) aboutUs.textContent = lang.about_us;
+            
+            const contact = document.getElementById('footer-contact');
+            if (contact) contact.textContent = lang.contact;
+            
+            const supportTitle = document.getElementById('footer-support-title');
+            if (supportTitle) supportTitle.textContent = lang.support;
+            
+            const faq = document.getElementById('footer-faq');
+            if (faq) faq.textContent = lang.faq;
+            
+            const shippingInfo = document.getElementById('footer-shipping-info');
+            if (shippingInfo) shippingInfo.textContent = lang.shipping_info;
+            
+            const copyright = document.getElementById('footer-copyright');
+            if (copyright) copyright.textContent = lang.copyright;
+            
+            const privacy = document.getElementById('footer-privacy');
+            if (privacy) privacy.textContent = lang.privacy_policy;
+            
+            const terms = document.getElementById('footer-terms');
+            if (terms) terms.textContent = lang.terms_of_service;
+            
+            const cookies = document.getElementById('footer-cookies');
+            if (cookies) cookies.textContent = lang.cookie_policy;
+        }
+        
+        function toggleLanguageDropdown() {
+            const dropdown = document.getElementById('language-dropdown');
+            dropdown.classList.toggle('hidden');
+        }
+        
+        // Close language dropdown when clicking outside
+        document.addEventListener('click', function(event) {
+            const desktopDropdown = document.getElementById('language-dropdown');
+            const desktopButton = event.target.closest('[onclick="toggleLanguageDropdown()"]');
+            
+            const mobileDropdown = document.getElementById('mobile-language-dropdown');
+            const mobileButton = event.target.closest('[onclick="toggleMobileLanguageDropdown()"]');
+            
+            // Close desktop dropdown
+            if (!desktopButton && !desktopDropdown.contains(event.target)) {
+                desktopDropdown.classList.add('hidden');
+            }
+            
+            // Close mobile dropdown
+            if (!mobileButton && !mobileDropdown.contains(event.target)) {
+                mobileDropdown.classList.add('hidden');
+            }
+        });
+        
+        // Load saved language preference on page load
+        window.addEventListener('load', function() {
+            const savedLang = localStorage.getItem('preferredLanguage');
+            if (savedLang && translations[savedLang]) {
+                changeLanguage(savedLang);
+            }
+        });
+
+        // Secret admin access system
+        let adminAccessGranted = false;
+        let keySequence = [];
+        const secretCode = ['a', 'd', 'm', 'i', 'n'];
+        
+        // Listen for secret key sequence
+        document.addEventListener('keydown', function(e) {
+            keySequence.push(e.key.toLowerCase());
+            if (keySequence.length > secretCode.length) {
+                keySequence.shift();
+            }
+            
+            if (keySequence.join('') === secretCode.join('')) {
+                grantAdminAccess();
+            }
+        });
+        
+        // Check URL for admin access
+        function checkAdminURL() {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('admin') === 'true' || window.location.hash === '#admin') {
+                grantAdminAccess();
+            }
+        }
+        
+        function grantAdminAccess() {
+            if (!adminAccessGranted) {
+                adminAccessGranted = true;
+                document.getElementById('admin-nav-button').style.display = 'block';
+                document.getElementById('admin-mobile-nav-button').style.display = 'block';
+                
+                // Show subtle notification
+                const notification = document.createElement('div');
+                notification.innerHTML = '🔓 Admin access granted';
+                notification.className = 'fixed top-4 right-4 bg-green-600 text-white px-4 py-2 rounded-lg shadow-lg z-50 text-sm';
+                document.body.appendChild(notification);
+                
+                setTimeout(() => {
+                    notification.remove();
+                }, 3000);
+            }
+        }
+        
+        // Check for admin access on page load
+        window.addEventListener('load', checkAdminURL);
+
+        // Mobile menu functions
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuButton = document.getElementById('mobile-menu-button');
+            const languageSelector = document.getElementById('mobile-language-selector');
+            
+            if (mobileMenu.classList.contains('show')) {
+                closeMobileMenu();
+            } else {
+                openMobileMenu();
+            }
+        }
+        
+        function openMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuButton = document.getElementById('mobile-menu-button');
+            
+            mobileMenu.classList.remove('hidden');
+            mobileMenu.classList.add('show');
+            menuButton.classList.add('open');
+        }
+        
+        function closeMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuButton = document.getElementById('mobile-menu-button');
+            
+            mobileMenu.classList.remove('show');
+            menuButton.classList.remove('open');
+            
+            // Close the language dropdown if open
+            document.getElementById('mobile-language-dropdown').classList.add('hidden');
+            
+            // Hide after animation completes
+            setTimeout(() => {
+                if (!mobileMenu.classList.contains('show')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            }, 300);
+        }
+        
+function toggleMobileLanguageDropdown(event) {
+    event.stopPropagation();
+
+    const dropdown = document.getElementById('mobile-language-dropdown');
+
+    // Close desktop dropdown if open
+    const desktopDropdown = document.getElementById('language-dropdown');
+    if (desktopDropdown) desktopDropdown.classList.add('hidden');
+
+    dropdown.classList.toggle('hidden');
+}
+
+        
+document.addEventListener('click', function (event) {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuButton = document.getElementById('mobile-menu-button');
+    const langSelector = document.getElementById('mobile-language-selector');
+    const langDropdown = document.getElementById('mobile-language-dropdown');
+
+    // Close language dropdown if clicking outside it
+    if (!langSelector.contains(event.target)) {
+        langDropdown.classList.add('hidden');
+    }
+
+    // Close mobile menu if clicking outside it
+    if (
+        !menuButton.contains(event.target) &&
+        !mobileMenu.contains(event.target)
+    ) {
+        closeMobileMenu();
+    }
+});
+
+
+        function showPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.classList.remove('active'));
+            
+            // Show selected page
+            document.getElementById(pageId).classList.add('active');
+            
+            // Update desktop navigation buttons
+            const navButtons = document.querySelectorAll('.nav-button');
+            navButtons.forEach(button => button.classList.remove('active'));
+            
+            // Update mobile navigation buttons
+            const mobileNavButtons = document.querySelectorAll('.mobile-nav-button');
+            mobileNavButtons.forEach(button => button.classList.remove('active'));
+            
+            // Find and activate the corresponding nav button
+            const navMap = {
+                'home': 0,
+                'products': 1,
+                'mailing-bags': 1,
+                'stretch-bands': 1,
+                'about': 2,
+                'contact': 3,
+                'admin': 4
+            };
+            
+            if (navMap[pageId] !== undefined) {
+                if (navButtons[navMap[pageId]]) {
+                    navButtons[navMap[pageId]].classList.add('active');
+                }
+                if (mobileNavButtons[navMap[pageId]]) {
+                    mobileNavButtons[navMap[pageId]].classList.add('active');
+                }
+            }
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+        
+        // Admin Functions
+        function adminLogin() {
+            const username = document.getElementById('admin-username').value;
+            const password = document.getElementById('admin-password').value;
+            
+            if (username === 'admin' && password === 'password123') {
+                document.getElementById('admin-login').style.display = 'none';
+                document.getElementById('admin-dashboard').style.display = 'block';
+                loadCurrentProducts();
+            } else {
+                alert('Invalid credentials. Please use: admin / password123');
+            }
+        }
+        
+        // Show/Hide Admin Forms
+        function showForgotPassword() {
+            document.getElementById('admin-login').style.display = 'none';
+            document.getElementById('forgot-password').style.display = 'block';
+            document.getElementById('create-user').style.display = 'none';
+        }
+        
+        function showCreateUser() {
+            document.getElementById('admin-login').style.display = 'none';
+            document.getElementById('forgot-password').style.display = 'none';
+            document.getElementById('create-user').style.display = 'block';
+        }
+        
+        function showLogin() {
+            document.getElementById('admin-login').style.display = 'block';
+            document.getElementById('forgot-password').style.display = 'none';
+            document.getElementById('create-user').style.display = 'none';
+        }
+        
+        // Password Reset Function
+        function resetPassword() {
+            const username = document.getElementById('reset-username').value;
+            
+            if (!username) {
+                alert('Please enter your username or email address.');
+                return;
+            }
+            
+            // Simulate sending reset email
+            alert(`Password reset instructions have been sent to the email associated with "${username}". Please check your inbox and follow the instructions to reset your password.`);
+            
+            // Clear the form and return to login
+            document.getElementById('reset-username').value = '';
+            showLogin();
+        }
+        
+        // Create User Function
+        function createUser() {
+            const fullname = document.getElementById('new-fullname').value;
+            const username = document.getElementById('new-username').value;
+            const email = document.getElementById('new-email').value;
+            const password = document.getElementById('new-password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+            const role = document.getElementById('new-role').value;
+            
+            // Validation
+            if (!fullname || !username || !email || !password || !confirmPassword) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            if (password !== confirmPassword) {
+                alert('Passwords do not match. Please try again.');
+                return;
+            }
+            
+            if (password.length < 6) {
+                alert('Password must be at least 6 characters long.');
+                return;
+            }
+            
+            // Check if username already exists (demo check)
+            if (username.toLowerCase() === 'admin') {
+                alert('Username "admin" already exists. Please choose a different username.');
+                return;
+            }
+            
+            // Simulate user creation
+            alert(`User account created successfully!\n\nName: ${fullname}\nUsername: ${username}\nEmail: ${email}\nRole: ${role}\n\nThe user can now log in with their credentials.`);
+            
+            // Clear the form and return to login
+            document.getElementById('new-fullname').value = '';
+            document.getElementById('new-username').value = '';
+            document.getElementById('new-email').value = '';
+            document.getElementById('new-password').value = '';
+            document.getElementById('confirm-password').value = '';
+            document.getElementById('new-role').value = 'admin';
+            
+            showLogin();
+        }
+        
+        function adminLogout() {
+            document.getElementById('admin-login').style.display = 'block';
+            document.getElementById('admin-dashboard').style.display = 'none';
+            document.getElementById('admin-username').value = '';
+            document.getElementById('admin-password').value = '';
+            
+            // Hide admin button and revoke access
+            adminAccessGranted = false;
+            document.getElementById('admin-nav-button').style.display = 'none';
+            document.getElementById('admin-mobile-nav-button').style.display = 'none';
+            
+            // Return to home page
+            showPage('home');
+        }
+        
+        // Banner Management
+        let selectedBannerFile = null;
+        
+        function previewBanner(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            
+            // Validate file type
+            if (!file.type.startsWith('image/')) {
+                alert('Please select a valid image file (JPG, PNG, GIF)');
+                return;
+            }
+            
+            // Validate file size (5MB limit)
+            if (file.size > 5 * 1024 * 1024) {
+                alert('File size must be less than 5MB');
+                return;
+            }
+            
+            selectedBannerFile = file;
+            
+            // Show preview
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const preview = document.getElementById('banner-preview');
+                preview.src = e.target.result;
+                
+                // Show preview container
+                document.getElementById('banner-preview-container').classList.remove('hidden');
+                
+                // Update file info
+                const fileInfo = document.getElementById('file-info');
+                fileInfo.textContent = `${file.name} (${(file.size / 1024 / 1024).toFixed(2)} MB)`;
+                
+                // Enable upload button
+                document.getElementById('upload-banner-btn').disabled = false;
+            };
+            reader.readAsDataURL(file);
+        }
+        
+        function clearBannerPreview() {
+            selectedBannerFile = null;
+            document.getElementById('banner-preview-container').classList.add('hidden');
+            document.getElementById('banner-upload').value = '';
+            document.getElementById('upload-banner-btn').disabled = true;
+        }
+        
+        function uploadBanner() {
+            if (!selectedBannerFile) {
+                alert('Please select a banner image first');
+                return;
+            }
+            
+            // Simulate upload process
+            const uploadBtn = document.getElementById('upload-banner-btn');
+            uploadBtn.textContent = 'Uploading...';
+            uploadBtn.disabled = true;
+            
+            setTimeout(() => {
+                // Update the current banner preview to show the new image
+                const currentPreview = document.getElementById('current-banner-preview');
+                const newImageSrc = document.getElementById('banner-preview').src;
+                
+                currentPreview.innerHTML = `
+                    <div class="relative">
+                        <img src="${newImageSrc}" alt="New banner image" class="w-full h-32 object-cover rounded-lg">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 rounded-lg flex items-center justify-center">
+                            <div class="text-white text-center">
+                                <div class="text-2xl mb-1">✨</div>
+                                <p class="text-sm font-medium">New Banner Active</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-2 text-center">Current banner image</p>
+                `;
+                
+                // In a real implementation, you would also update the actual banner on the website
+                // For demo purposes, we'll show a success message
+                alert(`Banner uploaded successfully!\n\nFile: ${selectedBannerFile.name}\nSize: ${(selectedBannerFile.size / 1024 / 1024).toFixed(2)} MB\n\nThe new banner is now active.`);
+                
+                // Reset form
+                clearBannerPreview();
+                
+                // Reset button
+                uploadBtn.textContent = 'Upload Banner';
+                uploadBtn.disabled = true;
+            }, 2000);
+        }
+
+        // Product Management
+        let products = [
+            {
+                nameKey: 'standard_mailing_bags',
+                descriptionKey: 'standard_mailing_bags_desc',
+                image: 'assets/products/standard.avif'
+            },
+            {
+                nameKey: 'customized_mailing_bags',
+                descriptionKey: 'customized_mailing_bags_desc',
+                image: 'assets/products/custom.avif'
+            }
+        ];
+        
+        // Product Image Management
+        let selectedProductImage = null;
+        
+        function previewProductImage(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            
+            // Validate file type
+            if (!file.type.startsWith('image/')) {
+                alert('Please select a valid image file (JPG, PNG, GIF)');
+                return;
+            }
+            
+            // Validate file size (5MB limit)
+            if (file.size > 5 * 1024 * 1024) {
+                alert('File size must be less than 5MB');
+                return;
+            }
+            
+            selectedProductImage = file;
+            
+            // Show preview
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const preview = document.getElementById('product-image-preview');
+                preview.src = e.target.result;
+                
+                // Show preview container
+                document.getElementById('product-image-preview-container').classList.remove('hidden');
+                
+                // Update file info
+                const fileInfo = document.getElementById('product-file-info');
+                fileInfo.textContent = `${file.name} (${(file.size / 1024 / 1024).toFixed(2)} MB)`;
+                
+                // Enable add product button
+                updateAddProductButton();
+            };
+            reader.readAsDataURL(file);
+        }
+        
+        function clearProductImagePreview() {
+            selectedProductImage = null;
+            document.getElementById('product-image-preview-container').classList.add('hidden');
+            document.getElementById('product-image-upload').value = '';
+            updateAddProductButton();
+        }
+        
+        function updateAddProductButton() {
+            const name = document.getElementById('product-name').value;
+            const description = document.getElementById('product-description').value;
+            const addBtn = document.getElementById('add-product-btn');
+            
+            // Enable button only if all required fields are filled
+            if (name && description && selectedProductImage) {
+                addBtn.disabled = false;
+            } else {
+                addBtn.disabled = true;
+            }
+        }
+        
+        // Add event listeners to form fields
+        document.addEventListener('DOMContentLoaded', function() {
+            const nameField = document.getElementById('product-name');
+            const descField = document.getElementById('product-description');
+            
+            if (nameField) nameField.addEventListener('input', updateAddProductButton);
+            if (descField) descField.addEventListener('input', updateAddProductButton);
+        });
+        
+        function addProduct() {
+            const name = document.getElementById('product-name').value;
+            const description = document.getElementById('product-description').value;
+            
+            if (!name || !description || !selectedProductImage) {
+                alert('Please fill in all required fields and upload a product image.');
+                return;
+            }
+            
+            // Convert image to base64 for storage
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const newProduct = { 
+                    name, 
+                    description, 
+                    image: e.target.result 
+                };
+                products.push(newProduct);
+                
+                // Update the mailing bags page
+                updateMailingBagsPage();
+                
+                // Clear form
+                document.getElementById('product-name').value = '';
+                document.getElementById('product-description').value = '';
+                clearProductImagePreview();
+                
+                // Refresh admin products list
+                loadCurrentProducts();
+                
+                alert(`Product "${name}" added successfully! The new product is now available on the mailing bags page.`);
+            };
+            reader.readAsDataURL(selectedProductImage);
+        }
+        
+        function updateMailingBagsPage() {
+            const mailingBagsGrid = document.getElementById('mailing-bags-grid');
+            mailingBagsGrid.innerHTML = '';
+            
+            // Get the translated "Request Quote" text
+            const requestQuoteText = translations[currentLanguage].products.request_quote;
+            
+            products.forEach((product, index) => {
+                // Get translated name and description using the key
+                const productName = product.nameKey ? translations[currentLanguage].products[product.nameKey] : product.name;
+                const productDesc = product.descriptionKey ? translations[currentLanguage].products[product.descriptionKey] : product.description;
+                
+                const productHtml = `
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+<div class="h-52 bg-white flex items-center justify-center">
+    <img
+        src="${product.image}"
+        alt="${productName}"
+        class="max-w-full max-h-full object-contain p-4"
+    >
+</div>
+
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold mb-3">${productName}</h3>
+                            <div class="text-gray-600 mb-4 text-xs leading-relaxed flex-grow">${productDesc}</div>
+                            <button onclick="requestQuote('${productName}')" class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors mt-auto">${requestQuoteText}</button>
+                        </div>
+                    </div>
+                `;
+                mailingBagsGrid.innerHTML += productHtml;
+            });
+        }
+        
+        function loadCurrentProducts() {
+            const adminProductsList = document.getElementById('admin-products-list');
+            adminProductsList.innerHTML = '';
+            
+            products.forEach((product, index) => {
+                // Get product name for display
+                const productName = product.nameKey ? translations[currentLanguage].products[product.nameKey] : product.name;
+                const productDesc = product.descriptionKey ? translations[currentLanguage].products[product.descriptionKey] : product.description;
+                
+                const productHtml = `
+                    <div class="bg-gray-50 rounded-lg p-4 border">
+                        <div class="flex items-center justify-between mb-2">
+                            <img src="${product.image}" alt="${productName}" class="w-12 h-12 object-cover rounded">
+                            <button onclick="removeProduct(${index})" class="text-red-600 hover:text-red-800 text-sm">Remove</button>
+                        </div>
+                        <h5 class="font-semibold text-sm mb-1">${productName}</h5>
+                        <p class="text-xs text-gray-600">${productDesc.replace(/<br>/g, ' ').substring(0, 50)}...</p>
+                    </div>
+                `;
+                adminProductsList.innerHTML += productHtml;
+            });
+        }
+        
+        function removeProduct(index) {
+            if (confirm('Are you sure you want to remove this product?')) {
+                products.splice(index, 1);
+                updateMailingBagsPage();
+                loadCurrentProducts();
+            }
+        }
+        
+        function requestQuote(productName) {
+    const email = 'brigita.petrauskaite@aiventus.com';
+    const subject = `Request for Quote${productName ? ' – ' + productName : ''}`;
+
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+
+    window.location.href = mailtoLink;
+}
+
+        
+        // FAQ Toggle functionality
+        function toggleFAQ(faqId) {
+            const faqContent = document.getElementById(faqId);
+            const faqIcon = document.getElementById(faqId + '-icon');
+            
+            if (faqContent.classList.contains('hidden')) {
+                faqContent.classList.remove('hidden');
+                faqIcon.style.transform = 'rotate(180deg)';
+            } else {
+                faqContent.classList.add('hidden');
+                faqIcon.style.transform = 'rotate(0deg)';
+            }
+        }
+        
+        // Map functionality
+        function openDirections() {
+            const address = "Guobų g. 2, Vilnius, Lithuania, LT-02236";
+            const encodedAddress = encodeURIComponent(address);
+            
+            // Try to open in Google Maps first, fallback to Apple Maps on iOS
+            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+            
+            if (isIOS) {
+                window.open(`http://maps.apple.com/?q=${encodedAddress}`, '_blank', 'noopener,noreferrer');
+            } else {
+                window.open(`https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`, '_blank', 'noopener,noreferrer');
+            }
+        }
+        
+        function viewStreetView() {
+            const address = "Guobų g. 2, Vilnius, Lithuania, LT-02236";
+            const encodedAddress = encodeURIComponent(address);
+            
+            // Open Google Street View
+            window.open(`https://www.google.com/maps/@?api=1&map_action=pano&parameters=${encodedAddress}`, '_blank', 'noopener,noreferrer');
+        }
+        
+        // Initialize the mailing bags page on load
+        window.addEventListener('load', function() {
+            updateMailingBagsPage();
+        });
+    </script>
+ 
+ <script>
+  const scrollCue = document.getElementById('scroll-cue');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+      scrollCue.style.opacity = '0';
+      scrollCue.style.pointerEvents = 'none';
+      scrollCue.style.transition = 'opacity 0.3s ease';
+    } else {
+      scrollCue.style.opacity = '1';
+      scrollCue.style.pointerEvents = 'auto';
+    }
+  });
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const blocks = document.querySelectorAll('.feature-block');
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (prefersReducedMotion) {
+    blocks.forEach(block => block.classList.add('is-visible'));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target); // animate once
+        }
+      });
+    },
+    {
+      threshold: 0.3
+    }
+  );
+
+  blocks.forEach(block => observer.observe(block));
+});
+</script>
+
+  <script>
+  function loadYouTube(container, videoId) {
+    container.innerHTML = `
+      <iframe
+        src="https://www.youtube.com/embed/${videoId}?autoplay=1"
+        class="w-full h-full"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    `;
+  }
+</script>
+
+
+ </body>
+</html>
